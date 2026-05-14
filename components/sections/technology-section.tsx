@@ -15,7 +15,6 @@ function ScrollRevealText({ text }: { text: string }) {
       const rect = containerRef.current.getBoundingClientRect();
       const windowHeight = window.innerHeight;
       
-      // Slower animation - more viewport range
       const startOffset = windowHeight * 0.9;
       const endOffset = windowHeight * 0.1;
       
@@ -27,7 +26,7 @@ function ScrollRevealText({ text }: { text: string }) {
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
-    handleScroll(); // Initial check
+    handleScroll();
     
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -37,7 +36,7 @@ function ScrollRevealText({ text }: { text: string }) {
   return (
     <p
       ref={containerRef}
-      className="text-xl font-semibold leading-snug sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl"
+      className="text-lg font-semibold leading-snug sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl"
     >
       {words.map((word, index) => {
         const wordProgress = index / words.length;
@@ -91,10 +90,17 @@ export function TechnologySection() {
   const sectionRef = useRef<HTMLElement>(null);
   const textSectionRef = useRef<HTMLDivElement>(null);
   const [scrollProgress, setScrollProgress] = useState(0);
-  const [textProgress, setTextProgress] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
   
   const descriptionText = t("description");
   const titleWords = t.raw("titleWords") as string[];
+
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < 768);
+    check();
+    window.addEventListener("resize", check, { passive: true });
+    return () => window.removeEventListener("resize", check);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -106,21 +112,6 @@ export function TechnologySection() {
       const progress = Math.max(0, Math.min(1, scrolled / scrollableHeight));
       
       setScrollProgress(progress);
-
-      // Text scroll progress
-      if (textSectionRef.current) {
-        const textRect = textSectionRef.current.getBoundingClientRect();
-        const windowHeight = window.innerHeight;
-        
-        const startOffset = windowHeight * 0.9;
-        const endOffset = windowHeight * 0.1;
-        
-        const totalDistance = startOffset - endOffset;
-        const currentPosition = startOffset - textRect.top;
-        
-        const newTextProgress = Math.max(0, Math.min(1, currentPosition / totalDistance));
-        setTextProgress(newTextProgress);
-      }
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
@@ -131,34 +122,25 @@ export function TechnologySection() {
     };
   }, []);
 
-  // Title fades out first (0 to 0.2)
   const titleOpacity = Math.max(0, 1 - (scrollProgress / 0.2));
-  
-  // Image transforms start after title fades (0.2 to 1)
   const imageProgress = Math.max(0, Math.min(1, (scrollProgress - 0.2) / 0.8));
   
-  // Smooth interpolations
-  const centerWidth = 100 - (imageProgress * 58); // 100% to 42%
-  const centerHeight = 100 - (imageProgress * 30); // 100% to 70%
-  const sideWidth = imageProgress * 22; // 0% to 22%
+  const centerWidth = 100 - (imageProgress * (isMobile ? 40 : 58));
+  const sideWidth = imageProgress * (isMobile ? 16 : 22);
   const sideOpacity = imageProgress;
-  const sideTranslateLeft = -100 + (imageProgress * 100); // -100% to 0%
-  const sideTranslateRight = 100 - (imageProgress * 100); // 100% to 0%
-  const borderRadius = imageProgress * 24; // 0px to 24px
-  const gap = imageProgress * 16; // 0px to 16px
-
-  // Calculate grayscale for text section based on textProgress
-  const grayscaleAmount = Math.round((1 - textProgress) * 100);
+  const sideTranslateLeft = -100 + (imageProgress * 100);
+  const sideTranslateRight = 100 - (imageProgress * 100);
+  const borderRadius = imageProgress * 24;
+  const gap = imageProgress * (isMobile ? 8 : 16);
 
   return (
     <section ref={sectionRef} className="relative bg-media-backdrop">
       {/* Sticky container for scroll animation */}
-      <div className="sticky top-0 h-screen overflow-hidden">
+      <div className="sticky top-0 h-[100svh] overflow-hidden">
         <div className="flex h-full w-full items-center justify-center">
-          {/* Bento Grid Container */}
           <div 
             className="relative flex h-full w-full items-stretch justify-center"
-            style={{ gap: `${gap}px`, padding: `${imageProgress * 16}px` }}
+            style={{ gap: `${gap}px`, padding: `${imageProgress * (isMobile ? 10 : 16)}px` }}
           >
             
             {/* Left Column */}
@@ -175,16 +157,14 @@ export function TechnologySection() {
                 <div 
                   key={idx} 
                   className="relative overflow-hidden will-change-transform"
-                  style={{
-                    flex: img.span,
-                    borderRadius: `${borderRadius}px`,
-                  }}
+                  style={{ flex: img.span, borderRadius: `${borderRadius}px` }}
                 >
                   <Image
                     src={img.src || "/placeholder.svg"}
                     alt={t(`alt.${img.altKey}`)}
                     fill
                     className="object-cover"
+                    sizes="20vw"
                   />
                 </div>
               ))}
@@ -205,21 +185,19 @@ export function TechnologySection() {
                 alt={t("alt.main")}
                 fill
                 className="object-cover"
+                sizes="100vw"
               />
               <div className="absolute inset-0 bg-media-backdrop/40" />
               
-              {/* Title Text - Fades out word by word with blur */}
-              <div 
-                className="absolute inset-0 flex flex-col items-center justify-center px-6 text-center"
-              >
-                <h2 className="max-w-3xl font-medium leading-tight tracking-tight text-white md:text-5xl lg:text-7xl text-5xl">
+              {/* Title Text */}
+              <div className="absolute inset-0 flex flex-col items-center justify-center px-6 text-center">
+                <h2 className="max-w-3xl font-medium leading-tight tracking-tight text-white text-4xl sm:text-5xl md:text-5xl lg:text-7xl">
                   {titleWords.map((word, index) => {
-                    // Each word fades out sequentially based on scrollProgress
-                    const wordFadeStart = index * 0.07; // Technology: 0, Meets: 0.07, Wilderness: 0.14
+                    const wordFadeStart = index * 0.07;
                     const wordFadeEnd = wordFadeStart + 0.07;
                     const wordProgress = Math.max(0, Math.min(1, (scrollProgress - wordFadeStart) / (wordFadeEnd - wordFadeStart)));
                     const wordOpacity = 1 - wordProgress;
-                    const wordBlur = wordProgress * 10; // 0px to 10px blur
+                    const wordBlur = wordProgress * 10;
                     
                     return (
                       <span
@@ -255,16 +233,14 @@ export function TechnologySection() {
                 <div 
                   key={idx} 
                   className="relative overflow-hidden will-change-transform"
-                  style={{
-                    flex: img.span,
-                    borderRadius: `${borderRadius}px`,
-                  }}
+                  style={{ flex: img.span, borderRadius: `${borderRadius}px` }}
                 >
                   <Image
                     src={img.src || "/placeholder.svg"}
                     alt={t(`alt.${img.altKey}`)}
                     fill
                     className="object-cover"
+                    sizes="20vw"
                   />
                 </div>
               ))}
@@ -277,15 +253,11 @@ export function TechnologySection() {
       {/* Scroll space to enable animation */}
       <div className="h-[200vh]" />
 
-      {/* Description Section with Background Image and Scroll Reveal */}
+      {/* Description Section with Scroll Reveal */}
       <div 
         ref={textSectionRef}
-        className="relative overflow-hidden bg-background px-5 py-16 sm:px-6 sm:py-24 md:px-12 md:py-32 lg:px-20 lg:py-40"
+        className="relative overflow-hidden bg-background px-5 py-16 sm:px-8 sm:py-24 md:px-12 md:py-32 lg:px-20 lg:py-40"
       >
-        {/* Background Image with Grayscale Filter */}
-        
-
-        {/* Text Content */}
         <div className="relative z-10 mx-auto max-w-4xl">
           <ScrollRevealText text={descriptionText} />
         </div>

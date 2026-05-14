@@ -11,7 +11,6 @@ export function GallerySection() {
   const [sectionHeight, setSectionHeight] = useState("100vh");
   const [translateX, setTranslateX] = useState(0);
   const rafRef = useRef<number | null>(null);
-  const lastScrollRef = useRef(0);
 
   const altText = t.raw("alt") as string[];
   const images = [
@@ -25,21 +24,18 @@ export function GallerySection() {
     { src: "/images/bottle-canyon.png" },
   ];
 
-  // Calculate section height based on content width
   useEffect(() => {
     const calculateHeight = () => {
       if (!containerRef.current) return;
       const containerWidth = containerRef.current.scrollWidth;
       const viewportWidth = window.innerWidth;
       const viewportHeight = window.innerHeight;
-      // Height = viewport height + the extra scroll needed to reveal all content
       const totalHeight = viewportHeight + (containerWidth - viewportWidth);
       setSectionHeight(`${totalHeight}px`);
     };
 
-    // Small delay to ensure container is rendered
     const timer = setTimeout(calculateHeight, 100);
-    window.addEventListener("resize", calculateHeight);
+    window.addEventListener("resize", calculateHeight, { passive: true });
     return () => {
       clearTimeout(timer);
       window.removeEventListener("resize", calculateHeight);
@@ -53,16 +49,9 @@ export function GallerySection() {
     const containerWidth = containerRef.current.scrollWidth;
     const viewportWidth = window.innerWidth;
     
-    // Total scroll distance needed to reveal all images
     const totalScrollDistance = containerWidth - viewportWidth;
-    
-    // Current scroll position within this section
     const scrolled = Math.max(0, -rect.top);
-    
-    // Progress from 0 to 1
     const progress = Math.min(1, scrolled / totalScrollDistance);
-    
-    // Calculate new translateX
     const newTranslateX = progress * -totalScrollDistance;
     
     setTranslateX(newTranslateX);
@@ -70,12 +59,7 @@ export function GallerySection() {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Cancel any pending animation frame
-      if (rafRef.current) {
-        cancelAnimationFrame(rafRef.current);
-      }
-      
-      // Use requestAnimationFrame for smooth updates
+      if (rafRef.current) cancelAnimationFrame(rafRef.current);
       rafRef.current = requestAnimationFrame(updateTransform);
     };
 
@@ -84,9 +68,7 @@ export function GallerySection() {
     
     return () => {
       window.removeEventListener("scroll", handleScroll);
-      if (rafRef.current) {
-        cancelAnimationFrame(rafRef.current);
-      }
+      if (rafRef.current) cancelAnimationFrame(rafRef.current);
     };
   }, [updateTransform]);
 
@@ -98,12 +80,19 @@ export function GallerySection() {
       style={{ height: sectionHeight }}
     >
       {/* Sticky container */}
-      <div className="sticky top-0 h-screen overflow-hidden">
+      <div className="sticky top-0 h-[100svh] overflow-hidden">
+        {/* Section label */}
+        <div className="absolute top-6 left-5 z-10 sm:left-8 md:left-12 lg:left-20">
+          <p className="text-xs uppercase tracking-widest text-muted-foreground">
+            Gallery
+          </p>
+        </div>
+
         <div className="flex h-full items-center">
           {/* Horizontal scrolling container */}
           <div 
             ref={containerRef}
-            className="flex gap-4 px-5 sm:gap-6 sm:px-6"
+            className="flex gap-3 px-5 sm:gap-5 sm:px-8 md:gap-6 md:px-12 lg:px-20"
             style={{
               transform: `translate3d(${translateX}px, 0, 0)`,
               WebkitTransform: `translate3d(${translateX}px, 0, 0)`,
@@ -117,8 +106,11 @@ export function GallerySection() {
             {images.map((image, index) => (
               <div
                 key={index}
-                className="relative h-[65vh] w-[80vw] flex-shrink-0 overflow-hidden rounded-2xl sm:h-[70vh] sm:w-[85vw] md:w-[60vw] lg:w-[45vw]"
+                className="relative flex-shrink-0 overflow-hidden rounded-2xl"
                 style={{
+                  // Responsive image card sizes per breakpoint via inline calc
+                  width: 'clamp(72vw, 80vw, 85vw)',
+                  height: 'clamp(58vh, 65vh, 72vh)',
                   transform: 'translateZ(0)',
                   WebkitTransform: 'translateZ(0)',
                 }}
@@ -129,6 +121,7 @@ export function GallerySection() {
                   fill
                   className="object-cover"
                   priority={index < 3}
+                  sizes="(max-width: 767px) 80vw, (max-width: 1023px) 60vw, 45vw"
                 />
               </div>
             ))}

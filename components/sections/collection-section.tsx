@@ -1,7 +1,6 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-
 import { FadeImage } from "@/components/fade-image";
 
 const accessories = [
@@ -16,34 +15,34 @@ const accessories = [
 function AccessoryCard({
   accessory,
   content,
-  priceClassName,
 }: {
   accessory: (typeof accessories)[number];
   content: { name: string; description: string };
-  priceClassName: string;
 }) {
   return (
-    <div className="group">
+    <div className="group flex-shrink-0">
       <div className="relative aspect-[2/3] overflow-hidden rounded-2xl bg-secondary">
         <FadeImage
           src={accessory.image}
           alt={content.name}
           fill
-          className="object-cover group-hover:scale-105"
+          className="object-cover transition-transform duration-500 group-hover:scale-105"
+          sizes="(max-width: 767px) 80vw, (max-width: 1023px) 33vw, 30vw"
         />
       </div>
-
-      <div className="py-6">
-        <div className="flex items-start justify-between gap-4">
+      <div className="py-5">
+        <div className="flex items-start justify-between gap-3">
           <div className="flex-1">
-            <h3 className="text-lg font-medium leading-snug text-foreground">
+            <h3 className="text-base font-medium leading-snug text-foreground sm:text-lg">
               {content.name}
             </h3>
-            <p className="mt-2 text-sm text-muted-foreground">
+            <p className="mt-1.5 text-sm text-muted-foreground">
               {content.description}
             </p>
           </div>
-          <span className={priceClassName}>{accessory.price}</span>
+          <span className="text-lg font-medium text-foreground sm:text-xl">
+            {accessory.price}
+          </span>
         </div>
       </div>
     </div>
@@ -59,38 +58,34 @@ export function CollectionSection() {
 
   return (
     <section id="accessories" className="bg-background">
-      <div className="px-5 py-14 sm:px-6 sm:py-20 md:px-12 lg:px-20 md:py-10">
-        <h2 className="text-2xl font-medium tracking-tight text-foreground sm:text-3xl md:text-4xl">
+      {/* Section heading */}
+      <div className="px-5 py-16 sm:px-8 sm:py-24 md:px-12 md:py-16 lg:px-20">
+        <h2 className="text-2xl font-medium tracking-tight text-foreground sm:text-3xl md:text-4xl lg:text-5xl">
           {t("title")}
         </h2>
       </div>
 
-      <div className="pb-16 sm:pb-24">
-        <div className="flex gap-4 overflow-x-auto px-5 pb-6 sm:gap-6 sm:px-6 md:hidden snap-x snap-mandatory scrollbar-hide">
-          {accessories.map((accessory, index) => (
-            <div
-              key={accessory.id}
-              className="flex-shrink-0 w-[80vw] snap-center sm:w-[60vw]"
-            >
-              <AccessoryCard
-                accessory={accessory}
-                content={translatedAccessories[index]}
-                priceClassName="text-lg font-medium text-foreground"
-              />
-            </div>
-          ))}
-        </div>
-
-        <div className="hidden md:grid md:grid-cols-3 gap-6 md:px-12 lg:px-20 lg:gap-8">
-          {accessories.map((accessory, index) => (
+      {/* Mobile: horizontal carousel */}
+      <div className="flex gap-4 overflow-x-auto px-5 pb-16 snap-x snap-mandatory scrollbar-hide sm:gap-5 sm:px-8 sm:pb-24 md:hidden">
+        {accessories.map((accessory, index) => (
+          <div key={accessory.id} className="w-[78vw] snap-center sm:w-[56vw]">
             <AccessoryCard
-              key={accessory.id}
               accessory={accessory}
               content={translatedAccessories[index]}
-              priceClassName="font-medium text-foreground text-2xl"
             />
-          ))}
-        </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Desktop: 3-col grid */}
+      <div className="hidden md:grid md:grid-cols-3 md:gap-6 md:px-12 md:pb-32 lg:gap-8 lg:px-20 lg:pb-40">
+        {accessories.map((accessory, index) => (
+          <AccessoryCard
+            key={accessory.id}
+            accessory={accessory}
+            content={translatedAccessories[index]}
+          />
+        ))}
       </div>
     </section>
   );

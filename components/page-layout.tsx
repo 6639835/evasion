@@ -23,7 +23,7 @@ interface PageHeroProps {
 
 export function PageHero({ eyebrow, title, description }: PageHeroProps) {
   return (
-    <div className="px-5 py-14 sm:px-6 sm:py-20 md:px-12 md:py-28 lg:px-20 lg:py-32">
+    <div className="px-5 py-16 sm:px-8 sm:py-24 md:px-12 md:py-32 lg:px-20 lg:py-40">
       {eyebrow && (
         <p className="mb-6 text-xs uppercase tracking-widest text-muted-foreground">
           {eyebrow}

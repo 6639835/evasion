@@ -8,16 +8,7 @@ export function EditorialSection() {
 
   return (
     <section className="bg-background">
-      {/* Newsletter Banner */}
-      
-
-      {/* Decorative Icons */}
-      <div className="flex items-center justify-center gap-6 pb-20">
-        
-        
-      </div>
-
-      {/* Specs Grid */}
+      {/* Specs grid — 2 cols mobile, 4 cols desktop */}
       <div className="grid grid-cols-2 border-t border-border md:grid-cols-4">
         {specs.map((spec) => (
           <div
@@ -27,15 +18,15 @@ export function EditorialSection() {
             <p className="mb-2 text-xs uppercase tracking-widest text-muted-foreground">
               {spec.label}
             </p>
-            <p className="font-medium text-foreground text-2xl sm:text-3xl md:text-4xl">
+            <p className="text-2xl font-medium text-foreground sm:text-3xl md:text-4xl">
               {spec.value}
             </p>
           </div>
         ))}
       </div>
 
-      {/* Full-width Video */}
-      <div className="relative aspect-[16/9] w-full md:aspect-[21/9]">
+      {/* Full-width video */}
+      <div className="relative aspect-[4/3] w-full sm:aspect-[16/9] md:aspect-[21/9]">
         <video
           autoPlay
           loop

@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
+import { LanguageSwitcher } from "@/components/language-switcher";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,11 +25,23 @@ export function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Lock body scroll when menu is open
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isMenuOpen]);
+
   return (
     <header
-      className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-3xl transition-all duration-300 ${showOpaque ? "rounded-2xl border border-border/60 bg-background/80 shadow-[var(--shadow-header)] backdrop-blur-md md:rounded-full" : "bg-transparent"}`}
+      className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[92%] max-w-3xl transition-all duration-300 ${showOpaque ? "rounded-2xl border border-border/60 bg-background/80 shadow-[var(--shadow-header)] backdrop-blur-md md:rounded-full" : "bg-transparent"}`}
     >
-      <div className="flex items-center justify-between transition-all duration-300 px-4 py-2">
+      <div className="flex items-center justify-between transition-all duration-300 px-4 py-2.5 md:py-2">
         {/* Logo */}
         <Link
           href="/"
@@ -64,7 +78,7 @@ export function Header() {
           </Link>
         </nav>
 
-        {/* CTA */}
+        {/* Desktop CTA */}
         <div className="hidden items-center gap-3 md:flex">
           <Link
             href="/#reserve"
@@ -79,53 +93,48 @@ export function Header() {
           <button
             type="button"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className={`transition-colors ${showOpaque ? "text-foreground" : "text-white drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)]"}`}
+            className={`p-1 transition-colors touch-manipulation ${showOpaque ? "text-foreground" : "text-white drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)]"}`}
             aria-label={t("toggleMenu")}
+            aria-expanded={isMenuOpen}
           >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {isMenuOpen ? <X size={22} /> : <Menu size={22} />}
           </button>
         </div>
       </div>
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="border-t border-border bg-background px-6 py-8 md:hidden rounded-b-2xl">
-          <nav className="flex flex-col gap-6">
-            <Link
-              href="/#products"
-              className="text-lg text-foreground"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {t("nav.products")}
-            </Link>
-            <Link
-              href="/#technology"
-              className="text-lg text-foreground"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {t("nav.technology")}
-            </Link>
-            <Link
-              href="/#gallery"
-              className="text-lg text-foreground"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {t("nav.gallery")}
-            </Link>
-            <Link
-              href="/#accessories"
-              className="text-lg text-foreground"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {t("nav.accessories")}
-            </Link>
+        <div className="border-t border-border bg-background/95 backdrop-blur-md px-6 pb-safe-area-inset-bottom md:hidden rounded-b-2xl">
+          <nav className="flex flex-col py-6 gap-0">
+            {[
+              { href: "/#products", label: t("nav.products") },
+              { href: "/#technology", label: t("nav.technology") },
+              { href: "/#gallery", label: t("nav.gallery") },
+              { href: "/#accessories", label: t("nav.accessories") },
+            ].map(({ href, label }) => (
+              <Link
+                key={href}
+                href={href}
+                className="py-4 text-base font-medium text-foreground border-b border-border/50 last:border-b-0 active:opacity-60 transition-opacity"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {label}
+              </Link>
+            ))}
+
             <Link
               href="/#reserve"
-              className="mt-4 bg-foreground px-5 py-3 text-center text-sm font-medium text-background rounded-full"
+              className="mt-6 bg-foreground px-5 py-3.5 text-center text-sm font-medium text-background rounded-full active:opacity-80 transition-opacity"
               onClick={() => setIsMenuOpen(false)}
             >
               {t("mobileCta")}
             </Link>
+
+            {/* Preferences row */}
+            <div className="mt-6 flex items-center justify-between">
+              <LanguageSwitcher />
+              <ThemeToggle />
+            </div>
           </nav>
         </div>
       )}

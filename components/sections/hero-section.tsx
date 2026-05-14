@@ -36,7 +36,15 @@ const sideImages = [
 export function HeroSection() {
   const sectionRef = useRef<HTMLElement>(null);
   const [scrollProgress, setScrollProgress] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
   const t = useTranslations("Home.hero");
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener("resize", checkMobile, { passive: true });
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -64,30 +72,34 @@ export function HeroSection() {
   // Image transforms start after text fades (0.2 to 1)
   const imageProgress = Math.max(0, Math.min(1, (scrollProgress - 0.2) / 0.8));
   
-  // Smooth interpolations
-  const centerWidth = 100 - (imageProgress * 58); // 100% to 42%
-  const centerHeight = 100 - (imageProgress * 30); // 100% to 70%
-  const sideWidth = imageProgress * 22; // 0% to 22%
-  const sideOpacity = imageProgress;
-  const sideTranslateLeft = -100 + (imageProgress * 100); // -100% to 0%
-  const sideTranslateRight = 100 - (imageProgress * 100); // 100% to 0%
-  const borderRadius = imageProgress * 24; // 0px to 24px
-  const gap = imageProgress * 16; // 0px to 16px
+  // On mobile: smaller side panels to keep center image dominant
+  const mobileMultiplier = isMobile ? 0.65 : 1;
   
-  // Vertical offset for side columns to move them up on mobile
-  const sideTranslateY = -(imageProgress * 15); // Move up by 15% when fully expanded
+  const centerWidth = 100 - (imageProgress * (isMobile ? 40 : 58));
+  const centerHeight = 100 - (imageProgress * (isMobile ? 20 : 30));
+  const sideWidth = imageProgress * (isMobile ? 16 : 22) * mobileMultiplier;
+  const sideOpacity = imageProgress;
+  const sideTranslateLeft = -100 + (imageProgress * 100);
+  const sideTranslateRight = 100 - (imageProgress * 100);
+  const borderRadius = imageProgress * 20;
+  const gap = imageProgress * (isMobile ? 8 : 16);
+  const sideTranslateY = -(imageProgress * (isMobile ? 8 : 15));
 
   return (
     <section ref={sectionRef} className="relative bg-background">
       {/* Sticky container for scroll animation */}
-      <div className="sticky top-0 h-screen overflow-hidden">
+      <div className="sticky top-0 h-[100svh] overflow-hidden">
         {/* Gradient scrim so transparent header text stays readable over the image */}
         <div className="pointer-events-none absolute inset-x-0 top-0 z-10 h-32 bg-gradient-to-b from-black/40 to-transparent" />
         <div className="flex h-full w-full items-center justify-center">
           {/* Bento Grid Container */}
           <div 
             className="relative flex h-full w-full items-stretch justify-center"
-            style={{ gap: `${gap}px`, padding: `${imageProgress * 16}px`, paddingBottom: `${60 + (imageProgress * 40)}px` }}
+            style={{
+              gap: `${gap}px`,
+              padding: `${imageProgress * (isMobile ? 10 : 16)}px`,
+              paddingBottom: `${(isMobile ? 48 : 60) + (imageProgress * (isMobile ? 24 : 40))}px`,
+            }}
           >
             
             {/* Left Column */}
@@ -104,16 +116,14 @@ export function HeroSection() {
                 <div 
                   key={idx} 
                   className="relative overflow-hidden will-change-transform"
-                  style={{
-                    flex: img.span,
-                    borderRadius: `${borderRadius}px`,
-                  }}
+                  style={{ flex: img.span, borderRadius: `${borderRadius}px` }}
                 >
                   <Image
                     src={img.src || "/placeholder.svg"}
                     alt={t(`alt.${img.altKey}`)}
                     fill
                     className="object-cover"
+                    sizes="20vw"
                   />
                 </div>
               ))}
@@ -135,6 +145,7 @@ export function HeroSection() {
                 fill
                 className="object-cover"
                 priority
+                sizes="100vw"
               />
               
               {/* Overlay Text - Fades out first */}
@@ -174,16 +185,14 @@ export function HeroSection() {
                 <div 
                   key={idx} 
                   className="relative overflow-hidden will-change-transform"
-                  style={{
-                    flex: img.span,
-                    borderRadius: `${borderRadius}px`,
-                  }}
+                  style={{ flex: img.span, borderRadius: `${borderRadius}px` }}
                 >
                   <Image
                     src={img.src || "/placeholder.svg"}
                     alt={t(`alt.${img.altKey}`)}
                     fill
                     className="object-cover"
+                    sizes="20vw"
                   />
                 </div>
               ))}
@@ -197,8 +206,8 @@ export function HeroSection() {
       <div className="h-[200vh]" />
 
       {/* Tagline Section */}
-      <div className="px-5 pt-20 pb-20 sm:px-6 sm:pt-32 sm:pb-28 md:pt-48 md:px-12 md:pb-36 lg:px-20 lg:pt-56 lg:pb-44">
-        <p className="mx-auto max-w-2xl text-center text-xl leading-relaxed text-muted-foreground sm:text-2xl md:text-3xl lg:text-[2.5rem] lg:leading-snug">
+      <div className="px-5 py-16 sm:px-8 sm:py-24 md:px-12 md:py-32 lg:px-20 lg:py-40">
+        <p className="mx-auto max-w-2xl text-center text-lg leading-relaxed text-muted-foreground sm:text-xl md:text-2xl lg:text-3xl">
           {t("taglineLine1")}
           <br />
           {t("taglineLine2")}

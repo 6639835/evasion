@@ -297,3 +297,8 @@
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
+
+/* Safe-area insets for notched/dynamic-island devices */
+.pb-safe-area-inset-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}

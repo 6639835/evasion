@@ -33,10 +33,10 @@ export function FooterSection() {
   return (
     <footer className="bg-background">
       {/* Main Footer Content */}
-      <div className="border-t border-border px-5 py-12 sm:px-6 sm:py-16 md:px-12 md:py-20 lg:px-20">
-        <div className="grid grid-cols-2 gap-8 sm:gap-12 md:grid-cols-4 lg:grid-cols-5">
-          {/* Brand */}
-          <div className="col-span-2 mb-2 md:col-span-1 md:mb-0 lg:col-span-2">
+      <div className="border-t border-border px-5 py-12 sm:px-8 sm:py-16 md:px-12 md:py-20 lg:px-20">
+        <div className="grid grid-cols-2 gap-8 sm:gap-10 md:grid-cols-4 lg:grid-cols-5">
+          {/* Brand - full width on mobile, left col on desktop */}
+          <div className="col-span-2 md:col-span-1 lg:col-span-2">
             <Link href="/" className="text-lg font-medium text-foreground">
               EVASION
             </Link>
@@ -98,9 +98,9 @@ export function FooterSection() {
         </div>
       </div>
 
-      {/* Legal Links */}
-      <div className="border-t border-border px-5 py-4 sm:px-6 md:px-12 lg:px-20">
-        <div className="flex flex-wrap gap-x-6 gap-y-2">
+      {/* Legal Links - wrappable row */}
+      <div className="border-t border-border px-5 py-4 sm:px-8 md:px-12 lg:px-20">
+        <div className="flex flex-wrap gap-x-5 gap-y-2">
           <Link href="/privacy" className="text-xs text-muted-foreground transition-colors hover:text-foreground">
             {t("links.privacy")}
           </Link>
@@ -117,8 +117,8 @@ export function FooterSection() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-border px-5 py-6 sm:px-6 md:px-12 lg:px-20">
-        <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
+      <div className="border-t border-border px-5 py-5 sm:px-8 md:px-12 lg:px-20">
+        <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-xs text-muted-foreground">
             {t("rights")}
           </p>
