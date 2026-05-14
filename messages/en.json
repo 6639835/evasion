@@ -1,0 +1,865 @@
+{
+    "Metadata": {
+        "title": "EVASION | Go Further",
+        "description": "Premium smart bottles engineered for adventure. GPS tracking, LED flashlight, and self-heating technology."
+    },
+    "Locale": {
+        "switch": "Change language",
+        "en": "EN",
+        "zh-CN": "中文"
+    },
+    "Theme": {
+        "change": "Change theme",
+        "light": "Light",
+        "dark": "Dark",
+        "system": "System"
+    },
+    "Header": {
+        "toggleMenu": "Toggle menu",
+        "nav": {
+            "products": "Products",
+            "technology": "Technology",
+            "gallery": "Gallery",
+            "accessories": "Accessories"
+        },
+        "cta": "Shop Now",
+        "mobileCta": "Reserve"
+    },
+    "Footer": {
+        "description": "Premium smart bottles engineered for adventure. GPS tracking, LED flashlight, and self-heating technology.",
+        "headings": {
+            "explore": "Explore",
+            "about": "About",
+            "service": "Service"
+        },
+        "links": {
+            "products": "Products",
+            "technology": "Technology",
+            "gallery": "Gallery",
+            "accessories": "Accessories",
+            "story": "Our Story",
+            "team": "Team",
+            "careers": "Careers",
+            "contact": "Contact",
+            "faq": "FAQ",
+            "shipping": "Shipping",
+            "returns": "Returns",
+            "warranty": "Warranty",
+            "privacy": "Privacy Policy",
+            "terms": "Terms of Use",
+            "cookies": "Cookie Policy",
+            "refund": "Refund & Dispute Policy"
+        },
+        "rights": "2026 EVASION. All rights reserved."
+    },
+    "Home": {
+        "metadata": {
+            "title": "EVASION | Go Further",
+            "description": "Premium smart bottles engineered for adventure. GPS tracking, LED flashlight, and self-heating technology."
+        },
+        "hero": {
+            "taglineLine1": "Lightweight, durable",
+            "taglineLine2": "and adventure-ready.",
+            "alt": {
+                "mountainHiking": "Mountain hiking adventure",
+                "campingStars": "Camping under stars",
+                "forestExploration": "Forest exploration",
+                "lakeCamping": "Lake camping view",
+                "main": "Mountain landscape with camping tent at sunset"
+            }
+        },
+        "philosophy": {
+            "title": "Meet Alpine & Forest.",
+            "eyebrow": "First generation",
+            "description": "Alpine & Forest are high-tech outdoor accessories designed for modern adventurers. Lightweight, durable, and engineered for extreme conditions.",
+            "alt": {
+                "alpine": "V1 Expedition Backpack in alpine setting",
+                "forest": "V1 Thermal mug in forest setting"
+            }
+        },
+        "featured": {
+            "titleLine1": "Engineered for Excellence.",
+            "titleLine2": "Designed for Adventure.",
+            "eyebrow": "Technology",
+            "features": [
+                {
+                    "title": "Smart Temperature Control",
+                    "description": "Innovation"
+                },
+                {
+                    "title": "Ultra-Light Carbon Frame",
+                    "description": "Performance"
+                },
+                {
+                    "title": "Weather-Resistant Design",
+                    "description": "Durability"
+                },
+                {
+                    "title": "Integrated GPS Tracking",
+                    "description": "Navigation"
+                },
+                {
+                    "title": "Built-In LED Flashlight",
+                    "description": "Visibility"
+                },
+                {
+                    "title": "Self-Heating Technology",
+                    "description": "Comfort"
+                }
+            ]
+        },
+        "technology": {
+            "titleWords": [
+                "Technology",
+                "Meets",
+                "Wilderness."
+            ],
+            "description": "Experience outdoor gear reimagined with cutting-edge technology. Alpine & Forest accessories combine ultra-lightweight materials, intelligent temperature control, and weather-resistant engineering to elevate every adventure. From mountain peaks to forest trails, your gear adapts to the conditions.",
+            "alt": {
+                "forestTrail": "Forest trail",
+                "mountainPeak": "Mountain peak",
+                "alpineLandscape": "Alpine landscape",
+                "snowMountain": "Snow mountain",
+                "main": "Aerial view of camping expedition in wilderness"
+            }
+        },
+        "gallery": {
+            "alt": [
+                "Thermal bottle on bike",
+                "Thermal bottle by lake",
+                "Thermal bottle in water",
+                "Thermal bottle by stream",
+                "Thermal bottle by fire",
+                "Thermal bottle in snow",
+                "Thermal bottle on mountain",
+                "Thermal bottle at canyon"
+            ]
+        },
+        "collection": {
+            "title": "Essential Accessories",
+            "accessories": [
+                {
+                    "name": "Wireless Charging Stand",
+                    "description": "Induction charging dock for effortless power"
+                },
+                {
+                    "name": "Protective Silicone Sleeve",
+                    "description": "Textured grip sleeve for enhanced durability"
+                },
+                {
+                    "name": "Carbon Fiber Bike Mount",
+                    "description": "Ultra-light mounting system for cycling"
+                },
+                {
+                    "name": "Premium Carry Strap",
+                    "description": "Adjustable strap with quick-release clips"
+                },
+                {
+                    "name": "Carabiner Clip System",
+                    "description": "Secure attachment for hands-free carrying"
+                },
+                {
+                    "name": "Bluetooth Speaker Base",
+                    "description": "High-fidelity audio dock with grip stabilizers"
+                }
+            ]
+        },
+        "editorial": {
+            "specs": [
+                {
+                    "label": "Weight",
+                    "value": "400g"
+                },
+                {
+                    "label": "Capacity",
+                    "value": "0.5L - 2L"
+                },
+                {
+                    "label": "Setup",
+                    "value": "2 min"
+                },
+                {
+                    "label": "Packed size",
+                    "value": "30 x 15 cm"
+                }
+            ]
+        },
+        "testimonials": {
+            "statement": "Alpine & Forest accessories combine aerospace-grade materials with cutting-edge technology — designed for explorers who refuse to compromise on quality or performance in the wild.",
+            "alt": "Mountain peaks at sunrise"
+        }
+    },
+    "Pages": {
+        "lastUpdated": "Last updated: 14 May 2026",
+        "about": {
+            "metadata": {
+                "title": "Our Story | EVASION",
+                "description": "Learn how EVASION builds premium smart bottles and outdoor gear for modern adventurers."
+            },
+            "hero": {
+                "eyebrow": "Our Story",
+                "title": "Built by adventurers, for adventurers.",
+                "description": "EVASION was founded in 2019 in Stockholm by a group of outdoor guides frustrated by gear that looked great in catalogues but failed in the field."
+            },
+            "story": [
+                "After one too many broken zippers, failed tent poles, and depleted batteries at critical moments, we decided to build the gear we wished existed. We partnered with aerospace materials engineers, ergonomics researchers, and professional mountaineers to create something different.",
+                "Today, EVASION products are used by guides, athletes, and everyday adventurers across 47 countries. Our mission remains the same: make gear that never lets you down when it matters most."
+            ],
+            "valuesEyebrow": "Our Values",
+            "teamEyebrow": "The Team",
+            "alt": "Expedition in the mountains",
+            "values": [
+                {
+                    "title": "No Compromise",
+                    "description": "We test every product in the field before it reaches you. If it doesn't perform under extreme conditions, we go back to the drawing board."
+                },
+                {
+                    "title": "Radical Lightness",
+                    "description": "Every gram matters. We obsess over weight without sacrificing structural integrity or functionality."
+                },
+                {
+                    "title": "Built to Last",
+                    "description": "We design products that outlast trends and technology cycles. Repairable, durable, and timeless."
+                }
+            ],
+            "team": [
+                {
+                    "name": "Erik Lindstrom",
+                    "role": "Founder & CEO",
+                    "bio": "Former alpine guide with 15 years leading expeditions across Scandinavia and the Himalayas."
+                },
+                {
+                    "name": "Sara Nilsson",
+                    "role": "Head of Design",
+                    "bio": "Industrial designer obsessed with the intersection of form, function, and extreme environments."
+                },
+                {
+                    "name": "Marcus Bjork",
+                    "role": "Chief Engineer",
+                    "bio": "Materials scientist who spent a decade developing aerospace composites before turning to outdoor gear."
+                },
+                {
+                    "name": "Lena Holm",
+                    "role": "Head of Operations",
+                    "bio": "Supply chain expert who ensures every EVASION product meets our zero-compromise manufacturing standards."
+                }
+            ]
+        },
+        "careers": {
+            "metadata": {
+                "title": "Careers | EVASION",
+                "description": "Join the EVASION team building premium adventure gear for modern explorers."
+            },
+            "hero": {
+                "eyebrow": "Careers",
+                "title": "Join the expedition.",
+                "description": "We're a small team building gear for big adventures. If you care deeply about craft, quality, and the outdoors — we'd love to hear from you."
+            },
+            "alt": [
+                "EVASION in the mountains",
+                "Snow expedition",
+                "Campfire warmth",
+                "Night adventure",
+                "Lake reflection"
+            ],
+            "openPositions": "Open Positions",
+            "apply": "Apply",
+            "spontaneousEyebrow": "Don't see a fit?",
+            "spontaneousTitle": "Send a spontaneous application.",
+            "spontaneousBody": "We're always interested in exceptional people. Tell us who you are and how you'd contribute to EVASION.",
+            "getInTouch": "Get in touch",
+            "roles": [
+                {
+                    "title": "Senior Materials Engineer",
+                    "department": "Engineering",
+                    "location": "Stockholm, Sweden",
+                    "type": "Full-time",
+                    "description": "Lead the development of next-generation composite materials for our flagship product line. You'll work closely with our design team and external research partners."
+                },
+                {
+                    "title": "Product Designer",
+                    "department": "Design",
+                    "location": "Stockholm, Sweden",
+                    "type": "Full-time",
+                    "description": "Shape the form and function of EVASION products from concept to production. Experience with industrial design and prototyping required."
+                },
+                {
+                    "title": "Field Test Coordinator",
+                    "department": "Product",
+                    "location": "Remote (Europe)",
+                    "type": "Full-time",
+                    "description": "Organize and run product field tests across Europe and beyond. Strong outdoor experience and project management skills essential."
+                },
+                {
+                    "title": "E-commerce Growth Lead",
+                    "department": "Marketing",
+                    "location": "Remote",
+                    "type": "Full-time",
+                    "description": "Own our digital acquisition and retention strategy. Data-driven and creative, you'll scale EVASION's direct-to-consumer business globally."
+                },
+                {
+                    "title": "Supply Chain Analyst",
+                    "department": "Operations",
+                    "location": "Stockholm, Sweden",
+                    "type": "Full-time",
+                    "description": "Optimize our end-to-end supply chain to support rapid growth while maintaining the quality standards EVASION is known for."
+                }
+            ],
+            "perks": [
+                {
+                    "title": "Gear Allowance",
+                    "description": "Annual allowance to test and use EVASION products in the field."
+                },
+                {
+                    "title": "Expedition Budget",
+                    "description": "Dedicated budget for team outdoor expeditions twice a year."
+                },
+                {
+                    "title": "Flexible Work",
+                    "description": "Hybrid and remote options for most roles. Adventure shouldn't wait."
+                },
+                {
+                    "title": "Health & Wellness",
+                    "description": "Comprehensive coverage including mental health and gym memberships."
+                }
+            ]
+        },
+        "contact": {
+            "metadata": {
+                "title": "Contact | EVASION",
+                "description": "Contact EVASION for product questions, orders, partnerships, press, careers, and support."
+            },
+            "hero": {
+                "eyebrow": "Contact",
+                "title": "We'd love to hear from you.",
+                "description": "Whether you have a question about your order, want to collaborate, or just want to talk gear — reach out."
+            },
+            "alt": "Mountain landscape",
+            "tagline": "Go further.",
+            "topicsHeading": "Contact by Topic",
+            "officesHeading": "Our Offices",
+            "responseNote": "We typically respond within 1–2 business days. For urgent order issues, please include your order number in the subject line.",
+            "topics": [
+                "Product Questions",
+                "Order & Shipping",
+                "Press & Media",
+                "Partnerships",
+                "Careers"
+            ],
+            "offices": [
+                {
+                    "city": "Stockholm",
+                    "role": "Headquarters",
+                    "address": "Birger Jarlsgatan 57, 113 56 Stockholm, Sweden"
+                },
+                {
+                    "city": "Zurich",
+                    "role": "R&D Lab",
+                    "address": "Limmatquai 112, 8001 Zurich, Switzerland"
+                }
+            ]
+        },
+        "faq": {
+            "metadata": {
+                "title": "FAQ | EVASION",
+                "description": "Answers to common questions about EVASION products, orders, shipping, returns, and warranty."
+            },
+            "hero": {
+                "eyebrow": "FAQ",
+                "title": "Frequently asked questions.",
+                "description": "Can't find what you're looking for? Contact us at support@evasion.com."
+            },
+            "alt": "EVASION bottle at canyon viewpoint",
+            "sections": [
+                {
+                    "category": "Products",
+                    "questions": [
+                        {
+                            "q": "What materials are EVASION products made from?",
+                            "a": "We use aerospace-grade composites, recycled high-tenacity nylon, and proprietary thermal alloys. Each material is selected for its strength-to-weight ratio and environmental impact."
+                        },
+                        {
+                            "q": "Are your products waterproof?",
+                            "a": "All EVASION products carry at minimum an IPX6 water-resistance rating. Our Alpine and Forest lines are fully waterproof (IPX8), rated for submersion up to 1.5m for 30 minutes."
+                        },
+                        {
+                            "q": "How do I care for my EVASION gear?",
+                            "a": "Most products can be wiped clean with a damp cloth. Refer to the care card included with your product for specific instructions. Avoid harsh solvents or machine washing unless explicitly specified."
+                        },
+                        {
+                            "q": "Do you offer custom or bulk orders?",
+                            "a": "Yes. For orders of 25+ units or custom branding, contact our partnerships team at partners@evasion.com."
+                        }
+                    ]
+                },
+                {
+                    "category": "Orders",
+                    "questions": [
+                        {
+                            "q": "How do I track my order?",
+                            "a": "Once your order ships, you'll receive a tracking link via email. You can also log into your account to view real-time shipping updates."
+                        },
+                        {
+                            "q": "Can I change or cancel my order?",
+                            "a": "Orders can be modified or cancelled within 1 hour of placement. After that, the order enters processing and changes may not be possible. Contact orders@evasion.com immediately."
+                        },
+                        {
+                            "q": "Do you offer gift wrapping?",
+                            "a": "Yes, select 'Gift Wrap' at checkout. We use minimal, recyclable packaging with a handwritten card option."
+                        }
+                    ]
+                },
+                {
+                    "category": "Shipping",
+                    "questions": [
+                        {
+                            "q": "Where do you ship?",
+                            "a": "We ship to 80+ countries worldwide. See our Shipping page for a full list and estimated delivery times."
+                        },
+                        {
+                            "q": "How long does shipping take?",
+                            "a": "Standard shipping within Europe takes 3–5 business days. Express options (1–2 days) are available at checkout. International orders typically take 7–14 business days."
+                        },
+                        {
+                            "q": "Is shipping free?",
+                            "a": "Free standard shipping on orders over €150 within Europe. For other regions, rates are calculated at checkout."
+                        }
+                    ]
+                },
+                {
+                    "category": "Returns & Warranty",
+                    "questions": [
+                        {
+                            "q": "What is your return policy?",
+                            "a": "We offer a 60-day no-questions-asked return policy on unused items in original packaging. See our Returns page for the full process."
+                        },
+                        {
+                            "q": "What does the EVASION warranty cover?",
+                            "a": "All products include a 3-year warranty against manufacturing defects. Our Lifetime Guarantee applies to our Alpine and Forest product lines. See the Warranty page for full terms."
+                        },
+                        {
+                            "q": "How do I start a return or warranty claim?",
+                            "a": "Visit our Returns page and complete the form. For warranty claims, please include photos of the defect and your proof of purchase."
+                        }
+                    ]
+                }
+            ]
+        },
+        "shipping": {
+            "metadata": {
+                "title": "Shipping | EVASION",
+                "description": "Shipping zones, delivery times, and costs for EVASION orders worldwide."
+            },
+            "hero": {
+                "eyebrow": "Shipping",
+                "title": "Fast, reliable delivery worldwide.",
+                "description": "We ship from our warehouse in Stockholm using trusted carriers. All orders include tracking."
+            },
+            "table": {
+                "zone": "Zone",
+                "countries": "Countries",
+                "standard": "Standard",
+                "express": "Express"
+            },
+            "goodToKnow": "Good to Know",
+            "questionPrefix": "Questions about your shipment?",
+            "contact": "Contact orders@evasion.com",
+            "alt": "EVASION bottle on a cycling adventure",
+            "zones": [
+                {
+                    "zone": "Europe",
+                    "countries": "All EU/EEA countries + UK, Switzerland, Norway",
+                    "standard": "3–5 business days",
+                    "express": "1–2 business days",
+                    "standardCost": "Free over €150, otherwise €8"
+                },
+                {
+                    "zone": "North America",
+                    "countries": "USA, Canada",
+                    "standard": "7–10 business days",
+                    "express": "3–5 business days",
+                    "standardCost": "€12"
+                },
+                {
+                    "zone": "Asia Pacific",
+                    "countries": "Australia, Japan, Singapore, South Korea, and more",
+                    "standard": "10–14 business days",
+                    "express": "5–7 business days",
+                    "standardCost": "€18"
+                },
+                {
+                    "zone": "Rest of World",
+                    "countries": "80+ additional countries",
+                    "standard": "12–18 business days",
+                    "express": "Not available",
+                    "standardCost": "Calculated at checkout"
+                }
+            ],
+            "notes": [
+                "Orders placed before 12:00 CET Monday–Friday are processed the same business day.",
+                "Delivery estimates are from the date of dispatch, not the date of order.",
+                "Customs and import duties are the responsibility of the recipient and vary by country.",
+                "Signature may be required for express deliveries over €300.",
+                "We do not ship to PO Boxes or APO/FPO addresses."
+            ]
+        },
+        "returns": {
+            "metadata": {
+                "title": "Returns | EVASION",
+                "description": "Learn how EVASION's 60-day hassle-free returns process works."
+            },
+            "hero": {
+                "eyebrow": "Returns",
+                "title": "60-day hassle-free returns.",
+                "description": "Not completely satisfied? We make returns simple. No restocking fees, no lengthy forms."
+            },
+            "conditionsHeading": "Return Conditions",
+            "readyPrefix": "Ready to return?",
+            "emailCta": "Email returns@evasion.com",
+            "readySuffix": "to get started.",
+            "steps": [
+                {
+                    "step": "01",
+                    "title": "Initiate your return",
+                    "description": "Email returns@evasion.com with your order number and reason for return within 60 days of delivery. We'll respond within 1 business day with a Return Merchandise Authorization (RMA) number.",
+                    "alt": "EVASION bottle detail"
+                },
+                {
+                    "step": "02",
+                    "title": "Pack your item",
+                    "description": "Place the item in its original packaging if available. Attach the RMA number visibly on the outside of the package. Items must be unused and in original condition.",
+                    "alt": "EVASION Alpine backpack"
+                },
+                {
+                    "step": "03",
+                    "title": "Ship it back",
+                    "description": "Send the package to our return address using any carrier. We recommend using a tracked service. Return shipping costs are covered by EVASION for defective items; otherwise, the customer is responsible.",
+                    "alt": "EVASION bottle on the move"
+                },
+                {
+                    "step": "04",
+                    "title": "Receive your refund",
+                    "description": "Once we receive and inspect the item, we'll process your refund within 3–5 business days to the original payment method. You'll receive a confirmation email when it's done.",
+                    "alt": "EVASION bottle by a mountain lake"
+                }
+            ],
+            "conditions": [
+                "Items must be returned within 60 days of the delivery date.",
+                "Products must be unused and in original packaging with all accessories and documentation.",
+                "Customized or engraved items cannot be returned unless defective.",
+                "Items purchased from third-party retailers must be returned directly to the retailer.",
+                "Sale items are eligible for store credit only, not cash refunds."
+            ]
+        },
+        "warranty": {
+            "metadata": {
+                "title": "Warranty | EVASION",
+                "description": "EVASION warranty coverage, product guarantees, and claim instructions."
+            },
+            "hero": {
+                "eyebrow": "Warranty",
+                "title": "We stand behind our gear.",
+                "description": "EVASION products are built to last. If something goes wrong due to our craftsmanship, we'll make it right."
+            },
+            "statementLine1": "Built to last a lifetime.",
+            "statementLine2": "Guaranteed.",
+            "coveredHeading": "What's Covered",
+            "claimHeading": "How to Make a Claim",
+            "claimPrefix": "To submit a warranty claim, email",
+            "claimSuffix": "with your order number, a description of the issue, and photos of the defect. We'll review your claim within 2 business days and arrange a repair, replacement, or refund at our discretion.",
+            "covered": "Covered",
+            "notCovered": "Not covered",
+            "alt": "EVASION Alpine backpack in the field",
+            "tiers": [
+                {
+                    "product": "Alpine & Forest Lines",
+                    "duration": "Lifetime",
+                    "description": "Our flagship products carry a Lifetime Guarantee. If it fails due to a manufacturing defect at any point, we'll repair or replace it — free of charge."
+                },
+                {
+                    "product": "Accessories",
+                    "duration": "3 Years",
+                    "description": "All EVASION accessories are covered by a 3-year warranty against manufacturing defects from the date of purchase."
+                },
+                {
+                    "product": "Electronics & Components",
+                    "duration": "2 Years",
+                    "description": "Integrated electronics including GPS modules, LED systems, and heating elements are covered for 2 years."
+                }
+            ],
+            "coverage": [
+                {
+                    "title": "Manufacturing Defects",
+                    "covered": true,
+                    "description": "Any defect in materials or workmanship that occurs under normal use."
+                },
+                {
+                    "title": "Hardware Failure",
+                    "covered": true,
+                    "description": "Zippers, buckles, clasps, and structural components that fail under normal use."
+                },
+                {
+                    "title": "Coating Delamination",
+                    "covered": true,
+                    "description": "Separation or peeling of waterproof and protective coatings."
+                },
+                {
+                    "title": "Normal Wear & Tear",
+                    "covered": false,
+                    "description": "Gradual degradation from regular use over time."
+                },
+                {
+                    "title": "Accidental Damage",
+                    "covered": false,
+                    "description": "Damage from drops, cuts, burns, or other accidents."
+                },
+                {
+                    "title": "Unauthorized Modifications",
+                    "covered": false,
+                    "description": "Damage resulting from alterations or repairs not performed by EVASION."
+                }
+            ]
+        },
+        "cookies": {
+            "metadata": {
+                "title": "Cookie Policy | EVASION",
+                "description": "How EVASION uses necessary, analytics, functional, and marketing cookies."
+            },
+            "hero": {
+                "eyebrow": "Legal",
+                "title": "Cookie Policy",
+                "description": "We use cookies to make the Site work and to understand how you use it. Here's a clear breakdown of what we use and why."
+            },
+            "alwaysOn": "Always on",
+            "optional": "Optional",
+            "examples": "Examples",
+            "types": [
+                {
+                    "name": "Strictly Necessary",
+                    "required": true,
+                    "description": "These cookies are essential for the Site to function. They enable core features like shopping cart persistence, secure checkout, and account authentication. They cannot be disabled.",
+                    "examples": [
+                        "Session ID",
+                        "Cart token",
+                        "CSRF token",
+                        "Authentication token"
+                    ]
+                },
+                {
+                    "name": "Analytics",
+                    "required": false,
+                    "description": "These cookies help us understand how visitors interact with the Site — which pages are visited most, how long users stay, and where they come from. All data is aggregated and anonymous.",
+                    "examples": [
+                        "Vercel Analytics",
+                        "Page view events",
+                        "Referral source"
+                    ]
+                },
+                {
+                    "name": "Functional",
+                    "required": false,
+                    "description": "These cookies remember your preferences and settings to provide a more personalised experience, such as your currency selection or preferred language.",
+                    "examples": [
+                        "Currency preference",
+                        "Language setting",
+                        "Theme preference"
+                    ]
+                },
+                {
+                    "name": "Marketing",
+                    "required": false,
+                    "description": "These cookies may be set by our advertising partners to build a profile of your interests and show you relevant ads on other websites. We currently do not run third-party ad campaigns.",
+                    "examples": [
+                        "Currently not in use"
+                    ]
+                }
+            ],
+            "sections": [
+                {
+                    "title": "What Are Cookies?",
+                    "body": "Cookies are small text files placed on your device when you visit a website. They allow the site to recognise your device on subsequent visits and store certain preferences or session information. Cookies are widely used to make websites work, or to work more efficiently, and to provide information to the site's owners."
+                },
+                {
+                    "title": "How to Manage Cookies",
+                    "body": "You can control and manage cookies in several ways:\n\n— Browser settings: Most browsers allow you to view, delete, and block cookies. Refer to your browser's help documentation for instructions. Note that blocking all cookies may affect the functionality of the Site.\n— Cookie banner: When you first visit the Site, you will be presented with a cookie consent banner where you can choose which non-essential cookies to accept.\n— Opt-out tools: For analytics, you can opt out directly through the provider (e.g., by enabling Do Not Track in your browser)."
+                },
+                {
+                    "title": "Third-Party Cookies",
+                    "body": "Some cookies are placed by third-party services that appear on our pages (e.g., Stripe for payment processing, Vercel Analytics for site analytics). These third parties have their own privacy and cookie policies, which we encourage you to review."
+                },
+                {
+                    "title": "Changes to This Policy",
+                    "body": "We may update this Cookie Policy from time to time to reflect changes in technology, regulation, or our practices. We will notify you of material changes via the Site."
+                }
+            ]
+        },
+        "privacy": {
+            "metadata": {
+                "title": "Privacy Policy | EVASION",
+                "description": "How EVASION collects, uses, shares, and protects personal data."
+            },
+            "hero": {
+                "eyebrow": "Legal",
+                "title": "Privacy Policy",
+                "description": "We take your privacy seriously. This policy explains what data we collect, why, and how you can control it."
+            },
+            "sections": [
+                {
+                    "title": "1. Who We Are",
+                    "body": "EVASION AB (\"EVASION\", \"we\", \"our\", \"us\") is a company registered in Sweden (org. nr. 559XXX-XXXX), with its registered office at Birger Jarlsgatan 57, 113 56 Stockholm. We operate the website evasion.com and all associated sub-domains (the \"Site\").\n\nFor questions about this policy, contact us at privacy@evasion.com."
+                },
+                {
+                    "title": "2. What Data We Collect",
+                    "body": "We collect information you provide directly to us, including:\n\n— Identity data: name, email address, billing and shipping address, phone number.\n— Payment data: card number, expiry, and CVV processed via our payment processor (Stripe). We do not store full card details on our servers.\n— Order data: products purchased, order history, returns, and warranty claims.\n— Account data: username, password (hashed), and preferences if you create an account.\n— Usage data: IP address, browser type, pages visited, time on site, referral source — collected automatically via cookies and analytics tools.\n— Communications: content of emails or messages you send us."
+                },
+                {
+                    "title": "3. How We Use Your Data",
+                    "body": "We use your data to:\n\n— Process and fulfil orders, including shipping and payment.\n— Manage your account and authenticate your identity.\n— Send transactional emails (order confirmations, shipping updates, warranty notices).\n— Respond to enquiries and support requests.\n— Send marketing communications, where you have opted in.\n— Analyse site usage and improve our products and services.\n— Comply with legal obligations (tax records, consumer protection law)."
+                },
+                {
+                    "title": "4. Legal Basis for Processing",
+                    "body": "Under the GDPR, we rely on the following legal bases:\n\n— Contract: processing necessary to fulfil your order.\n— Legitimate interests: fraud prevention, site security, and internal analytics.\n— Consent: marketing emails and non-essential cookies. You may withdraw consent at any time.\n— Legal obligation: tax and accounting records retained as required by Swedish law."
+                },
+                {
+                    "title": "5. Sharing Your Data",
+                    "body": "We do not sell your personal data. We share data only with:\n\n— Payment processors (Stripe) to handle transactions.\n— Shipping carriers (DHL, PostNord, UPS) to deliver orders.\n— Cloud infrastructure providers (Vercel, AWS) that host our services.\n— Analytics providers (Vercel Analytics) under strict data processing agreements.\n— Legal authorities where required by law.\n\nAll third parties are required to process your data only as instructed and in accordance with applicable data protection law."
+                },
+                {
+                    "title": "6. International Transfers",
+                    "body": "Some of our service providers are based outside the EEA. Where data is transferred outside the EEA, we ensure appropriate safeguards are in place — typically Standard Contractual Clauses approved by the European Commission."
+                },
+                {
+                    "title": "7. Retention",
+                    "body": "We retain your data for as long as necessary to fulfil the purposes outlined in this policy. Order records are retained for 7 years to comply with Swedish accounting law. You may request deletion of your account data at any time, subject to legal retention obligations."
+                },
+                {
+                    "title": "8. Your Rights",
+                    "body": "Under GDPR, you have the right to:\n\n— Access the personal data we hold about you.\n— Correct inaccurate data.\n— Request erasure (\"right to be forgotten\"), subject to legal exceptions.\n— Restrict or object to processing.\n— Data portability: receive your data in a structured, machine-readable format.\n— Withdraw consent at any time where processing is based on consent.\n— Lodge a complaint with the Swedish Authority for Privacy Protection (IMY) at imy.se.\n\nTo exercise any right, email privacy@evasion.com. We will respond within 30 days."
+                },
+                {
+                    "title": "9. Cookies",
+                    "body": "We use cookies and similar technologies. See our Cookie Policy for full details. You can manage your preferences via the cookie banner or your browser settings."
+                },
+                {
+                    "title": "10. Children",
+                    "body": "Our Site is not directed at children under 16. We do not knowingly collect personal data from children. If you believe a child has provided us with data, contact privacy@evasion.com and we will delete it promptly."
+                },
+                {
+                    "title": "11. Changes to This Policy",
+                    "body": "We may update this policy from time to time. We will notify you of material changes by email or by a prominent notice on the Site. The date at the bottom of this page reflects when the policy was last updated."
+                }
+            ]
+        },
+        "terms": {
+            "metadata": {
+                "title": "Terms of Use | EVASION",
+                "description": "Terms that govern use of the EVASION website and product purchases."
+            },
+            "hero": {
+                "eyebrow": "Legal",
+                "title": "Terms of Use",
+                "description": "Please read these terms carefully before using the EVASION website or purchasing our products."
+            },
+            "sections": [
+                {
+                    "title": "1. Acceptance of Terms",
+                    "body": "By accessing or using the EVASION website (evasion.com) or purchasing any EVASION product, you agree to be bound by these Terms of Use (\"Terms\"). If you do not agree, please do not use our Site or services.\n\nThese Terms apply to all visitors, customers, and users of the Site. EVASION AB reserves the right to update these Terms at any time. Continued use of the Site after changes constitutes your acceptance of the revised Terms."
+                },
+                {
+                    "title": "2. Eligibility",
+                    "body": "You must be at least 18 years of age to place an order on the Site. By using the Site, you represent that you are of legal age to form a binding contract in your jurisdiction."
+                },
+                {
+                    "title": "3. Products and Pricing",
+                    "body": "All product descriptions, images, and specifications are provided in good faith and are subject to change without notice. We reserve the right to correct any errors and to refuse or cancel orders placed at incorrect prices.\n\nPrices are listed in EUR and are inclusive of applicable VAT for EU customers. Prices do not include shipping fees or import duties, which are calculated at checkout."
+                },
+                {
+                    "title": "4. Orders and Payment",
+                    "body": "By placing an order, you make an offer to purchase. A contract is formed only when we send you an order confirmation email.\n\nWe accept payment via major credit and debit cards and other methods listed at checkout. All payments are processed securely by Stripe. We reserve the right to cancel orders where payment cannot be verified or where fraud is suspected."
+                },
+                {
+                    "title": "5. Shipping and Delivery",
+                    "body": "Delivery times are estimates and not guaranteed. EVASION is not responsible for delays caused by customs, carriers, or circumstances beyond our control. Risk of loss passes to you upon delivery. See our Shipping Policy for full details."
+                },
+                {
+                    "title": "6. Returns and Refunds",
+                    "body": "You have the right to return unused products within 60 days of delivery. Refund and dispute procedures are described in our Refund & Dispute Policy. Statutory consumer rights under applicable law are not affected by these Terms."
+                },
+                {
+                    "title": "7. Intellectual Property",
+                    "body": "All content on the Site — including text, images, logos, product designs, and code — is the property of EVASION AB or its licensors and is protected by copyright, trademark, and other intellectual property laws.\n\nYou may not reproduce, distribute, modify, or create derivative works from any content on the Site without our prior written consent."
+                },
+                {
+                    "title": "8. User Conduct",
+                    "body": "When using the Site, you agree not to:\n\n— Post or transmit unlawful, harmful, or offensive content.\n— Attempt to gain unauthorized access to any part of the Site or its underlying systems.\n— Use the Site for any commercial purpose not expressly authorized by EVASION.\n— Scrape, harvest, or extract data from the Site using automated means.\n— Infringe the intellectual property rights of EVASION or any third party."
+                },
+                {
+                    "title": "9. Disclaimer of Warranties",
+                    "body": "The Site and its content are provided \"as is\" without warranty of any kind, express or implied. EVASION does not warrant that the Site will be uninterrupted, error-free, or free of viruses.\n\nNothing in these Terms limits or excludes liability that cannot be limited by law (including liability for death or personal injury caused by negligence)."
+                },
+                {
+                    "title": "10. Limitation of Liability",
+                    "body": "To the fullest extent permitted by law, EVASION's total liability to you in connection with these Terms or your use of the Site shall not exceed the amount you paid for the relevant order, or €100, whichever is greater.\n\nWe are not liable for indirect, incidental, special, or consequential damages arising from your use of the Site or products."
+                },
+                {
+                    "title": "11. Governing Law",
+                    "body": "These Terms are governed by the laws of Sweden. Any disputes shall be subject to the exclusive jurisdiction of the courts of Stockholm, Sweden, without prejudice to any mandatory consumer protection rights you may have under the laws of your country of residence."
+                },
+                {
+                    "title": "12. Contact",
+                    "body": "For questions about these Terms, contact us at legal@evasion.com or by post at EVASION AB, Birger Jarlsgatan 57, 113 56 Stockholm, Sweden."
+                }
+            ]
+        },
+        "refund": {
+            "metadata": {
+                "title": "Refund & Dispute Policy | EVASION",
+                "description": "EVASION refund eligibility, return process, exchanges, disputes, and statutory rights."
+            },
+            "hero": {
+                "eyebrow": "Legal",
+                "title": "Refund & Dispute Policy",
+                "description": "We stand behind every product we sell. If something isn't right, we'll make it right."
+            },
+            "quickLinks": [
+                "How to return an item ->",
+                "Warranty claims ->",
+                "Contact us ->"
+            ],
+            "sections": [
+                {
+                    "title": "1. Overview",
+                    "body": "This Refund & Dispute Policy (\"Policy\") governs all purchases made on evasion.com and applies to customers worldwide. It works alongside your statutory consumer rights, which this Policy does not limit.\n\nFor step-by-step return instructions, see our Returns page. For warranty claims, see our Warranty page."
+                },
+                {
+                    "title": "2. Eligibility for Refunds",
+                    "body": "You are entitled to a full refund if:\n\n— You return an unused item in original condition within 60 days of delivery.\n— The item arrived damaged or materially different from its description.\n— The item developed a manufacturing defect covered by our warranty.\n— We are unable to fulfil your order and no suitable substitute is available.\n\nThe following are not eligible for cash refunds:\n— Items showing signs of use, wear, or modification.\n— Customised or engraved products (unless defective).\n— Items purchased from third-party retailers (contact the retailer directly).\n— Digital gift cards once redeemed."
+                },
+                {
+                    "title": "3. Refund Process",
+                    "body": "To request a refund:\n\n1. Email returns@evasion.com with your order number and reason for return.\n2. We will issue a Return Merchandise Authorization (RMA) within 1 business day.\n3. Ship the item back to us using a tracked carrier. Return postage is covered by EVASION for defective items; otherwise, costs are the customer's responsibility.\n4. Upon receipt and inspection, we will process your refund within 3–5 business days.\n\nRefunds are issued to the original payment method. Depending on your bank, it may take an additional 5–10 business days to appear on your statement."
+                },
+                {
+                    "title": "4. Partial Refunds",
+                    "body": "We may issue a partial refund where:\n\n— Only part of an order is returned.\n— Items are returned in a condition that reduces their value (e.g., missing accessories or original packaging).\n— A discount or promotional code was applied to the original order.\n\nWe will communicate the partial refund amount before processing."
+                },
+                {
+                    "title": "5. Exchanges",
+                    "body": "We do not process direct exchanges. If you wish to receive a different product, please return the original item for a refund and place a new order. This ensures the fastest turnaround and avoids stock issues."
+                },
+                {
+                    "title": "6. Disputes",
+                    "body": "We aim to resolve all issues quickly and fairly. If you are unsatisfied with the outcome of a refund or return request:\n\n— Contact us at disputes@evasion.com. Include your order number, a description of the issue, and any supporting evidence (photos, correspondence).\n— We will acknowledge your dispute within 2 business days and work towards a resolution within 10 business days.\n— If we cannot resolve the dispute directly, you may escalate to your national consumer protection authority or use the EU Online Dispute Resolution platform at ec.europa.eu/consumers/odr.\n\nFor payment disputes, you may also initiate a chargeback with your card issuer. We ask that you contact us first, as we can often resolve issues faster than the chargeback process."
+                },
+                {
+                    "title": "7. Statutory Rights",
+                    "body": "Nothing in this Policy affects your statutory rights under applicable consumer protection law. EU/EEA customers retain a minimum 2-year legal guarantee on all products under EU Directive 2019/771. UK customers retain equivalent rights under the Consumer Rights Act 2015.\n\nIf you are unsure of your rights, contact your national consumer authority."
+                },
+                {
+                    "title": "8. Contact",
+                    "body": "Refund requests: returns@evasion.com\nDisputes: disputes@evasion.com\nGeneral support: support@evasion.com"
+                }
+            ]
+        }
+    }
+}
