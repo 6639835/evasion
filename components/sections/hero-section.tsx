@@ -8,25 +8,25 @@ const word = "EVASION";
 
 const sideImages = [
   {
-    src: "https://images.unsplash.com/photo-1517824806704-9040b037703b?q=80&w=1000",
+    src: "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=1000",
     altKey: "mountainHiking",
     position: "left",
     span: 1,
   },
   {
-    src: "https://images.unsplash.com/photo-1510312305653-8ed496efae75?q=80&w=1000",
+    src: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?q=80&w=1000",
     altKey: "campingStars",
     position: "left",
     span: 1,
   },
   {
-    src: "https://images.unsplash.com/photo-1533873984035-25970ab07461?q=80&w=1000",
+    src: "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&w=1000",
     altKey: "forestExploration",
     position: "right",
     span: 1,
   },
   {
-    src: "https://images.unsplash.com/photo-1527004013197-933c4bb611b3?q=80&w=1000",
+    src: "https://images.unsplash.com/photo-1464207687429-7505649dae38?q=80&w=1000",
     altKey: "lakeCamping",
     position: "right",
     span: 1,

@@ -57,7 +57,6 @@ export async function generateMetadata({ params }: Omit<Props, "children">): Pro
   return {
     title: t("title"),
     description: t("description"),
-    generator: "v0.app",
     icons,
   };
 }

@@ -126,19 +126,19 @@ export function FooterSection() {
           {/* Social Links */}
           <div className="flex items-center gap-4">
             <Link
-              href="#"
+              href="https://instagram.com/evasion"
               className="text-xs text-muted-foreground transition-colors hover:text-foreground"
             >
               Instagram
             </Link>
             <Link
-              href="#"
+              href="https://x.com/evasion"
               className="text-xs text-muted-foreground transition-colors hover:text-foreground"
             >
-              Twitter
+              X
             </Link>
             <Link
-              href="#"
+              href="https://youtube.com/@evasion"
               className="text-xs text-muted-foreground transition-colors hover:text-foreground"
             >
               YouTube

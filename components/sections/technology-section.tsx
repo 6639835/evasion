@@ -61,25 +61,25 @@ function ScrollRevealText({ text }: { text: string }) {
 
 const sideImages = [
   {
-    src: "https://images.unsplash.com/photo-1476610182048-b716b8518aae?q=80&w=1000",
+    src: "https://images.unsplash.com/photo-1542224566-6e85f2e6772f?q=80&w=1000",
     altKey: "forestTrail",
     position: "left",
     span: 1,
   },
   {
-    src: "https://images.unsplash.com/photo-1511593358241-7eea1f3c84e5?q=80&w=1000",
+    src: "https://images.unsplash.com/photo-1445307806294-bff7f67ff225?q=80&w=1000",
     altKey: "mountainPeak",
     position: "left",
     span: 1,
   },
   {
-    src: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=1000",
+    src: "https://images.unsplash.com/photo-1516912481808-3406841bd33c?q=80&w=1000",
     altKey: "alpineLandscape",
     position: "right",
     span: 1,
   },
   {
-    src: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1000",
+    src: "https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?q=80&w=1000",
     altKey: "snowMountain",
     position: "right",
     span: 1,
@@ -201,7 +201,7 @@ export function TechnologySection() {
               }}
             >
               <Image
-                src="https://images.unsplash.com/photo-1501555088652-021faa106b9b?q=80&w=2000"
+                src="https://images.unsplash.com/photo-1476611338391-6f395a0ebc7b?q=80&w=2000"
                 alt={t("alt.main")}
                 fill
                 className="object-cover"

@@ -54,7 +54,7 @@ export default async function ContactPage({ params }: LocalePageProps) {
         <div className="relative hidden md:block">
           <div className="sticky top-0 h-screen overflow-hidden">
             <Image
-              src="/images/hero-main.png"
+              src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1600"
               alt={t("alt")}
               fill
               className="object-cover"

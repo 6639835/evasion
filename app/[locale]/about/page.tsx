@@ -7,16 +7,16 @@ import { setLocaleFromParams, type LocalePageProps } from "@/i18n/page";
 
 const team = [
   {
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600",
-  },
-  {
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=600",
-  },
-  {
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=600",
+    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=600",
   },
   {
     image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=600",
+  },
+  {
+    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=600",
+  },
+  {
+    image: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=600",
   },
 ];
 
@@ -48,7 +48,7 @@ export default async function AboutPage({ params }: LocalePageProps) {
       <div className="grid grid-cols-1 gap-0 md:grid-cols-2">
         <div className="relative aspect-[4/3] overflow-hidden">
           <Image
-            src="https://images.unsplash.com/photo-1501555088652-021faa106b9b?q=80&w=1200"
+            src="https://images.unsplash.com/photo-1501854140801-50d01698950b?q=80&w=1600"
             alt={t("alt")}
             fill
             className="object-cover"

@@ -50,7 +50,7 @@ export default async function WarrantyPage({ params }: LocalePageProps) {
       {/* Full-bleed statement image */}
       <div className="relative mt-16 aspect-[16/9] w-full overflow-hidden md:aspect-[21/9]">
         <Image
-          src="/images/product-backpack.png"
+          src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=2400"
           alt={t("alt")}
           fill
           className="object-cover"

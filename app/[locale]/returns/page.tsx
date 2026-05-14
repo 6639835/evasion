@@ -6,10 +6,10 @@ import { getLocalizedMetadata } from "@/i18n/metadata";
 import { setLocaleFromParams, type LocalePageProps } from "@/i18n/page";
 
 const stepImages = [
-  "/images/led-flashlight-bottle.png",
-  "/images/product-backpack.png",
-  "/images/bottle-bike.png",
-  "/images/bottle-lake.png",
+  "https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1200",
+  "https://images.unsplash.com/photo-1530143584546-02191bc84eb5?q=80&w=1200",
+  "https://images.unsplash.com/photo-1491553895911-0055eca6402d?q=80&w=1200",
+  "https://images.unsplash.com/photo-1512499617640-c74ae3a79d37?q=80&w=1200",
 ];
 
 export async function generateMetadata({ params }: LocalePageProps) {

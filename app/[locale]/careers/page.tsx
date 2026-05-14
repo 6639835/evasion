@@ -50,7 +50,7 @@ export default async function CareersPage({ params }: LocalePageProps) {
               <Image src="/images/bottle-snow.png" alt={alt[1]} fill className="object-cover" />
             </div>
             <div className="relative flex-1 overflow-hidden rounded-2xl">
-              <Image src="/images/heating-campfire.png" alt={alt[2]} fill className="object-cover" />
+              <Image src="https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?q=80&w=1200" alt={alt[2]} fill className="object-cover" />
             </div>
           </div>
           {/* Column 3 — two stacked, desktop only */}
@@ -59,7 +59,7 @@ export default async function CareersPage({ params }: LocalePageProps) {
               <Image src="/images/bottle-fire.png" alt={alt[3]} fill className="object-cover" />
             </div>
             <div className="relative flex-1 overflow-hidden rounded-2xl">
-              <Image src="/images/bottle-lake.png" alt={alt[4]} fill className="object-cover" />
+              <Image src="https://images.unsplash.com/photo-1534351590666-13e3e96b5017?q=80&w=1200" alt={alt[4]} fill className="object-cover" />
             </div>
           </div>
         </div>
