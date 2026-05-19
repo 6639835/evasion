@@ -6,7 +6,13 @@
   "Locale": {
     "switch": "切换语言",
     "en": "EN",
-    "zh-CN": "中文"
+    "zh-CN": "简",
+    "zh-TW": "繁",
+    "ja": "日",
+    "ko": "한",
+    "fr": "FR",
+    "de": "DE",
+    "es": "ES"
   },
   "Theme": {
     "change": "切换主题",

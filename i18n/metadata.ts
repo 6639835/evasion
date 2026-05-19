@@ -20,6 +20,10 @@ export async function getLocalizedMetadata(
 ): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace });
 
+  const languages = Object.fromEntries(
+    routing.locales.map((l) => [l, localizedPath(path, l)]),
+  ) as Record<Locale, string>;
+
   return {
     metadataBase: baseUrl,
     title: t("metadata.title"),
@@ -27,8 +31,7 @@ export async function getLocalizedMetadata(
     alternates: {
       canonical: localizedPath(path, locale),
       languages: {
-        en: localizedPath(path, "en"),
-        "zh-CN": localizedPath(path, "zh-CN"),
+        ...languages,
         "x-default": localizedPath(path, routing.defaultLocale),
       },
     },

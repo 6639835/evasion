@@ -1,0 +1,386 @@
+{
+  "Metadata": {
+    "title": "EVASION | 走得更遠",
+    "description": "為冒險打造的高階智慧水瓶，整合 GPS 定位、LED 手電與自加熱技術。"
+  },
+  "Locale": {
+    "switch": "切換語言",
+    "en": "EN",
+    "zh-CN": "简",
+    "zh-TW": "繁",
+    "ja": "日",
+    "ko": "한",
+    "fr": "FR",
+    "de": "DE",
+    "es": "ES"
+  },
+  "Theme": {
+    "change": "切換主題",
+    "light": "淺色",
+    "dark": "深色",
+    "system": "跟隨系統"
+  },
+  "Header": {
+    "toggleMenu": "開啟或關閉選單",
+    "nav": {
+      "products": "產品",
+      "technology": "技術",
+      "gallery": "圖庫",
+      "accessories": "配件"
+    },
+    "cta": "立即購買",
+    "mobileCta": "預訂"
+  },
+  "Footer": {
+    "description": "為冒險打造的高階智慧水瓶，整合 GPS 定位、LED 手電與自加熱技術。",
+    "headings": {
+      "explore": "探索",
+      "about": "關於",
+      "service": "服務"
+    },
+    "links": {
+      "products": "產品",
+      "technology": "技術",
+      "gallery": "圖庫",
+      "accessories": "配件",
+      "story": "品牌故事",
+      "team": "團隊",
+      "careers": "加入我們",
+      "contact": "聯絡我們",
+      "faq": "常見問題",
+      "shipping": "配送",
+      "returns": "退貨",
+      "warranty": "保固",
+      "privacy": "隱私政策",
+      "terms": "使用條款",
+      "cookies": "Cookie 政策",
+      "refund": "退款與爭議政策"
+    },
+    "rights": "2026 EVASION. 保留所有權利。"
+  },
+  "Home": {
+    "metadata": {
+      "title": "EVASION | 走得更遠",
+      "description": "為冒險打造的高階智慧水瓶，整合 GPS 定位、LED 手電與自加熱技術。"
+    },
+    "hero": {
+      "taglineLine1": "輕巧、堅固，",
+      "taglineLine2": "為冒險而生。",
+      "alt": {
+        "mountainHiking": "山地徒步冒險",
+        "campingStars": "星空下的露營",
+        "forestExploration": "森林探索",
+        "lakeCamping": "湖畔露營",
+        "main": "日落時山地景觀中的帳篷"
+      }
+    },
+    "philosophy": {
+      "title": "認識 Alpine 與 Forest。",
+      "eyebrow": "第一代",
+      "description": "Alpine 與 Forest 是為現代冒險者打造的高科技戶外配件。輕量、堅固，並專為極端環境設計。",
+      "alt": {
+        "alpine": "高山環境中的 V1 探險背包",
+        "forest": "森林中的 V1 保溫杯"
+      }
+    },
+    "featured": {
+      "titleLine1": "為卓越而設計，",
+      "titleLine2": "為冒險而打造。",
+      "eyebrow": "技術",
+      "features": [
+        { "title": "智慧溫控", "description": "創新" },
+        { "title": "超輕碳纖維結構", "description": "效能" },
+        { "title": "全天候設計", "description": "耐用" },
+        { "title": "整合 GPS 追蹤", "description": "導航" },
+        { "title": "內建 LED 手電", "description": "可見度" },
+        { "title": "自加熱技術", "description": "舒適" }
+      ]
+    },
+    "technology": {
+      "titleWords": ["技術", "邂逅", "荒野。"],
+      "description": "透過尖端科技重新定義戶外裝備。Alpine 與 Forest 配件結合超輕量材料、智慧溫控與全天候工藝，讓每一次冒險都更出色。從山巔到林徑，裝備皆能因地制宜。",
+      "alt": {
+        "forestTrail": "森林小徑",
+        "mountainPeak": "山巔",
+        "alpineLandscape": "高山風景",
+        "snowMountain": "雪山",
+        "main": "野外露營遠征空拍"
+      }
+    },
+    "gallery": {
+      "alt": [
+        "腳踏車上的保溫水瓶",
+        "湖畔的保溫水瓶",
+        "水中的保溫水瓶",
+        "溪邊的保溫水瓶",
+        "篝火旁的保溫水瓶",
+        "雪地中的保溫水瓶",
+        "山上的保溫水瓶",
+        "峽谷中的保溫水瓶"
+      ]
+    },
+    "collection": {
+      "title": "必備配件",
+      "accessories": [
+        { "name": "無線充電底座", "description": "感應充電底座，輕鬆補電" },
+        { "name": "保護矽膠套", "description": "紋理握感套，提升耐用" },
+        { "name": "碳纖維車架支架", "description": "騎乘專用超輕量安裝系統" },
+        { "name": "高階攜行肩帶", "description": "可調式快拆扣肩帶" },
+        { "name": "勾扣式快扣系統", "description": "穩固固定，便於免手攜行" },
+        { "name": "藍牙喇叭底座", "description": "高保真音響底座，附穩固支點" }
+      ]
+    },
+    "editorial": {
+      "specs": [
+        { "label": "重量", "value": "400 g" },
+        { "label": "容量", "value": "0.5L – 2L" },
+        { "label": "組裝", "value": "2 分鐘" },
+        { "label": "收納尺寸", "value": "30 × 15 cm" }
+      ]
+    },
+    "testimonials": {
+      "statement": "Alpine 與 Forest 配件融合航太級材料與尖端科技，為不在荒野中妥協品質與效能的探險者而生。",
+      "alt": "日出的山巔",
+      "reviews": [
+        { "quote": "自加熱功能徹底改變了我的冬季遠征。每一次抵達山頂都還能喝到熱咖啡。", "name": "Marcus T.", "role": "登山運動員，夏慕尼", "avatar": "https://images.unsplash.com/photo-1566492031773-4f4e44671857?q=80&w=200" },
+        { "quote": "我帶著 Alpine 經歷過嚴峻考驗——極寒、涉水、落石。它從未讓我失望。", "name": "Sara K.", "role": "野外嚮導，科羅拉多", "avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=200" },
+        { "quote": "在山徑上連續十二小時，飲料依然維持完美溫度。GPS 追蹤更是錦上添花。", "name": "Lena W.", "role": "越野跑者，因斯布魯克", "avatar": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?q=80&w=200" }
+      ],
+      "reviewsEyebrow": "來自野外的回饋"
+    }
+  },
+  "Errors": {
+    "notFound": { "metadata": { "title": "找不到頁面 | EVASION", "description": "您要訪問的頁面不存在。" }, "eyebrow": "404", "title": "走偏了路線。", "description": "您要訪問的頁面似乎走失了。讓我們帶您回到起點。", "cta": "回到首頁" },
+    "appError": { "metadata": { "title": "發生錯誤 | EVASION" }, "eyebrow": "錯誤", "title": "我們這邊出了一點問題。", "description": "發生了非預期錯誤。您可以重試，或回到首頁。", "retry": "重試", "home": "回到首頁" }
+  },
+  "Cookies": { "title": "我們使用 Cookie", "description": "EVASION 使用必要 Cookie 維持網站運作，並使用可選的分析 Cookie 以改善體驗。請參閱我們的 Cookie 政策。", "policy": "Cookie 政策", "accept": "全部接受", "reject": "拒絕非必要" },
+  "Pages": {
+    "lastUpdated": "最後更新：2026 年 5 月 14 日",
+    "about": {
+      "metadata": { "title": "品牌故事 | EVASION", "description": "了解 EVASION 如何為現代冒險者打造高階智慧水瓶與戶外裝備。" },
+      "hero": { "eyebrow": "品牌故事", "title": "由冒險者打造，為冒險者而生。", "description": "EVASION 於 2019 年在斯德哥爾摩誕生，創始團隊是一群戶外嚮導，他們厭倦了那些在型錄上光鮮、實戰中卻失靈的裝備。" },
+      "story": [
+        "在經歷過太多斷裂的拉鍊、折斷的營柱與關鍵時刻沒電的電池後，我們決定打造自己真正想用的裝備。我們與航太材料工程師、人因工程研究者與專業登山者合作，創造截然不同的產品。",
+        "如今 EVASION 產品已被 47 個國家的嚮導、運動員與日常冒險者使用。我們的使命從未改變：打造在關鍵時刻絕不掉鏈的裝備。"
+      ],
+      "valuesEyebrow": "我們的價值觀",
+      "teamEyebrow": "團隊",
+      "alt": "山地探險",
+      "values": [
+        { "title": "絕不妥協", "description": "每件產品在交付給您前都會通過實地測試。若在極端條件下無法勝任，我們便回到製圖板。" },
+        { "title": "極致輕量", "description": "每一克都重要。我們執著於減重，同時不犧牲結構強度與功能。" },
+        { "title": "歷久耐用", "description": "我們設計的產品不追逐潮流與技術週期。可維修、耐用、不過時。" }
+      ],
+      "team": [
+        { "name": "Erik Lindstrom", "role": "創辦人暨執行長", "bio": "前高山嚮導，在斯堪地那維亞與喜馬拉雅率隊探險超過 15 年。" },
+        { "name": "Sara Nilsson", "role": "設計負責人", "bio": "工業設計師，深耕造型、機能與極端環境的交會。" },
+        { "name": "Marcus Bjork", "role": "首席工程師", "bio": "材料科學家，曾投入十年研發航太複合材料，後轉戰戶外裝備。" },
+        { "name": "Lena Holm", "role": "營運負責人", "bio": "供應鏈專家，守護 EVASION 不妥協的製造標準。" }
+      ]
+    },
+    "careers": {
+      "metadata": { "title": "加入我們 | EVASION", "description": "加入 EVASION，為現代探險者打造頂級冒險裝備。" },
+      "hero": { "eyebrow": "加入我們", "title": "加入這場遠征。", "description": "我們是一支小型團隊，正為宏大的冒險打造裝備。如果您重視工藝、品質與戶外，請與我們聯絡。" },
+      "alt": ["山中的 EVASION", "雪地探險", "篝火旁的溫暖", "夜間冒險", "湖面倒影"],
+      "openPositions": "開放職缺",
+      "apply": "立即應徵",
+      "spontaneousEyebrow": "沒看到合適的職缺？",
+      "spontaneousTitle": "歡迎主動投遞履歷。",
+      "spontaneousBody": "我們始終期待結識傑出人才。請告訴我們您是誰，以及您將如何為 EVASION 做出貢獻。",
+      "getInTouch": "與我們聯絡",
+      "roles": [
+        { "title": "資深材料工程師", "department": "工程", "location": "瑞典斯德哥爾摩", "type": "全職", "description": "主導旗艦產品線下一代複合材料研發，並與設計團隊及外部研究夥伴緊密合作。" },
+        { "title": "產品設計師", "department": "設計", "location": "瑞典斯德哥爾摩", "type": "全職", "description": "從概念到量產，形塑 EVASION 產品的造型與機能。需具備工業設計與原型製作經驗。" },
+        { "title": "野外測試協調員", "department": "產品", "location": "遠端（歐洲）", "type": "全職", "description": "規劃並執行歐洲及其他地區的產品野外測試。需具備紮實的戶外經驗與專案管理能力。" },
+        { "title": "電商成長負責人", "department": "行銷", "location": "遠端", "type": "全職", "description": "領導數位獲客與留存策略，以數據與創意推動 EVASION 直面消費者業務全球成長。" },
+        { "title": "供應鏈分析師", "department": "營運", "location": "瑞典斯德哥爾摩", "type": "全職", "description": "優化端到端供應鏈，支援快速成長同時維護 EVASION 的品質標準。" }
+      ],
+      "perks": [
+        { "title": "裝備津貼", "description": "每年提供津貼，讓您在實際戶外場景測試與使用 EVASION 產品。" },
+        { "title": "遠征預算", "description": "每年兩次團隊戶外遠征專項預算。" },
+        { "title": "彈性工作", "description": "多數職缺支援混合與遠端工作。冒險不該等待。" },
+        { "title": "健康與身心福利", "description": "完整保障，包括心理健康支持與健身房會員。" }
+      ]
+    },
+    "contact": {
+      "metadata": { "title": "聯絡我們 | EVASION", "description": "就產品、訂單、合作、媒體、招募與支援與 EVASION 聯絡。" },
+      "hero": { "eyebrow": "聯絡我們", "title": "期待聽到您的消息。", "description": "無論是訂單問題、合作邀請，或只是想聊聊裝備——歡迎來訊。" },
+      "alt": "山地景觀",
+      "tagline": "走得更遠。",
+      "topicsHeading": "依主題聯絡",
+      "officesHeading": "我們的辦公室",
+      "responseNote": "我們通常會在 1–2 個工作天內回覆。若為緊急訂單問題，請在郵件主旨中註明訂單號。",
+      "topics": ["產品問題", "訂單與配送", "媒體與公關", "合作夥伴", "加入我們"],
+      "offices": [
+        { "city": "斯德哥爾摩", "role": "總部", "address": "Birger Jarlsgatan 57, 113 56 Stockholm, Sweden" },
+        { "city": "蘇黎世", "role": "研發實驗室", "address": "Limmatquai 112, 8001 Zurich, Switzerland" }
+      ]
+    },
+    "faq": {
+      "metadata": { "title": "常見問題 | EVASION", "description": "關於 EVASION 產品、訂單、配送、退貨與保固的常見問題。" },
+      "hero": { "eyebrow": "常見問題", "title": "常見問題。", "description": "找不到想要的答案？請透過 support@evasion.com 聯絡我們。" },
+      "alt": "峽谷觀景點的 EVASION 水瓶",
+      "sections": [
+        { "category": "產品", "questions": [
+          { "q": "EVASION 產品由哪些材料製成？", "a": "我們使用航太級複合材料、再生高強度尼龍與自家熱合金。每種材料皆依強度重量比與環境影響挑選。" },
+          { "q": "你們的產品防水嗎？", "a": "所有 EVASION 產品至少達 IPX6 防水。Alpine 與 Forest 系列為完全防水（IPX8），可於 1.5 公尺水深浸泡 30 分鐘。" },
+          { "q": "如何保養 EVASION 裝備？", "a": "多數產品可用濕布擦拭。請參考隨附的保養卡。除非另有說明，避免強溶劑或機洗。" },
+          { "q": "有提供客製或大量訂單嗎？", "a": "有的。25 件以上或客製品牌需求，請聯絡 partners@evasion.com。" }
+        ]},
+        { "category": "訂單", "questions": [
+          { "q": "如何追蹤訂單？", "a": "出貨後您會收到追蹤連結。也可登入帳號查看即時更新。" },
+          { "q": "可以修改或取消訂單嗎？", "a": "下單後 1 小時內可修改或取消。逾時請立即聯絡 orders@evasion.com。" },
+          { "q": "有提供禮品包裝嗎？", "a": "有的。請在結帳時選擇「禮品包裝」，我們會使用簡潔可回收的包裝並附手寫卡片選項。" }
+        ]},
+        { "category": "配送", "questions": [
+          { "q": "可以配送到哪些地區？", "a": "我們配送至全球 80 多個國家。完整清單與時效請見配送頁面。" },
+          { "q": "配送需要多久？", "a": "歐洲標準配送 3–5 個工作天。可加購 1–2 日快遞。國際訂單通常需 7–14 個工作天。" },
+          { "q": "配送是免費的嗎？", "a": "歐洲地區滿 €150 免標準運費。其他地區依結帳計算。" }
+        ]},
+        { "category": "退貨與保固", "questions": [
+          { "q": "退貨政策為何？", "a": "未使用且保持原包裝可享 60 天無憂退貨。完整流程請見退貨頁面。" },
+          { "q": "EVASION 保固涵蓋什麼？", "a": "所有產品提供 3 年製造瑕疵保固。Alpine 與 Forest 系列享終身保固。詳見保固頁面。" },
+          { "q": "如何提出退貨或保固申請？", "a": "請至退貨頁面填寫表單。保固申請請附上瑕疵照片與購買證明。" }
+        ]}
+      ]
+    },
+    "shipping": {
+      "metadata": { "title": "配送 | EVASION", "description": "EVASION 全球訂單的配送區域、時效與費用。" },
+      "hero": { "eyebrow": "配送", "title": "快速且可靠，配送全球。", "description": "我們由斯德哥爾摩倉庫發貨，並使用可信賴的物流業者。所有訂單皆含追蹤。" },
+      "table": { "zone": "區域", "countries": "國家／地區", "standard": "標準配送", "express": "快遞" },
+      "goodToKnow": "須知",
+      "questionPrefix": "對配送有疑問嗎？",
+      "contact": "請聯絡 orders@evasion.com",
+      "alt": "騎乘冒險中的 EVASION 水瓶",
+      "zones": [
+        { "zone": "歐洲", "countries": "所有 EU／EEA 國家 + 英國、瑞士、挪威", "standard": "3–5 個工作天", "express": "1–2 個工作天", "standardCost": "滿 €150 免運，否則 €8" },
+        { "zone": "北美", "countries": "美國、加拿大", "standard": "7–10 個工作天", "express": "3–5 個工作天", "standardCost": "€12" },
+        { "zone": "亞太", "countries": "澳洲、日本、新加坡、韓國等", "standard": "10–14 個工作天", "express": "5–7 個工作天", "standardCost": "€18" },
+        { "zone": "世界其他地區", "countries": "80 多個其他國家", "standard": "12–18 個工作天", "express": "暫不提供", "standardCost": "結帳時計算" }
+      ],
+      "notes": [
+        "週一至週五 CET 12:00 前下單將於當日處理。",
+        "預計送達時間自出貨日起算，而非下單日。",
+        "海關與進口稅由收件人負擔，依國家／地區而異。",
+        "超過 €300 的快遞訂單可能需要簽收。",
+        "我們不配送至郵政信箱或 APO／FPO 地址。"
+      ]
+    },
+    "returns": {
+      "metadata": { "title": "退貨 | EVASION", "description": "了解 EVASION 60 天無憂退貨流程。" },
+      "hero": { "eyebrow": "退貨", "title": "60 天無憂退貨。", "description": "不甚滿意？退貨流程簡單。沒有補貨費，沒有冗長表單。" },
+      "conditionsHeading": "退貨條件",
+      "readyPrefix": "準備好退貨了嗎？",
+      "emailCta": "請寄信至 returns@evasion.com",
+      "readySuffix": "即可開始。",
+      "steps": [
+        { "step": "01", "title": "提出退貨", "description": "請於收貨後 60 天內寄信至 returns@evasion.com，註明訂單號與退貨原因。我們會在 1 個工作天內提供 RMA 退貨授權編號。", "alt": "EVASION 水瓶細節" },
+        { "step": "02", "title": "包裝商品", "description": "請盡量使用原包裝，並將 RMA 編號清楚貼在外側。商品必須未使用並保持原狀。", "alt": "EVASION Alpine 背包" },
+        { "step": "03", "title": "寄回包裹", "description": "請以您選擇的物流寄至我們的退貨地址。建議使用可追蹤服務。瑕疵品由 EVASION 負擔退貨運費，其他情況由客戶負擔。", "alt": "移動中的 EVASION 水瓶" },
+        { "step": "04", "title": "收到退款", "description": "我們收到並檢查後，會在 3–5 個工作天內將退款退回原支付方式。完成時您會收到確認郵件。", "alt": "山湖旁的 EVASION 水瓶" }
+      ],
+      "conditions": [
+        "商品需在收貨日起 60 天內退回。",
+        "產品必須未使用，並保留原包裝、所有配件與文件。",
+        "客製或刻字商品恕不退貨，除非有瑕疵。",
+        "從第三方零售商購買的商品請直接退回該零售商。",
+        "促銷商品僅可退為店鋪額度，不支援現金退款。"
+      ]
+    },
+    "warranty": {
+      "metadata": { "title": "保固 | EVASION", "description": "EVASION 保固範圍、產品保證與申請說明。" },
+      "hero": { "eyebrow": "保固", "title": "我們為自家裝備負責。", "description": "EVASION 產品歷久耐用。若是我們的工藝瑕疵，我們會妥善處理。" },
+      "statementLine1": "為終身使用而生。",
+      "statementLine2": "並提供保證。",
+      "coveredHeading": "保固範圍",
+      "claimHeading": "如何申請",
+      "claimPrefix": "提出保固申請請寄信至",
+      "claimSuffix": "並附上訂單號、問題說明與瑕疵照片。我們會在 2 個工作天內審核，並酌情安排維修、更換或退款。",
+      "covered": "涵蓋",
+      "notCovered": "不涵蓋",
+      "alt": "野外的 EVASION Alpine 背包",
+      "tiers": [
+        { "product": "Alpine 與 Forest 系列", "duration": "終身", "description": "旗艦產品享有終身保固。任何時候若因製造瑕疵失效，我們將免費維修或更換。" },
+        { "product": "配件", "duration": "3 年", "description": "所有 EVASION 配件自購買日起享 3 年製造瑕疵保固。" },
+        { "product": "電子與元件", "duration": "2 年", "description": "整合電子元件，包括 GPS 模組、LED 系統與加熱元件，享 2 年保固。" }
+      ],
+      "coverage": [
+        { "title": "製造瑕疵", "covered": true, "description": "正常使用下出現的材料或工藝瑕疵。" },
+        { "title": "硬體故障", "covered": true, "description": "正常使用下拉鍊、扣具、卡扣與結構元件失效。" },
+        { "title": "塗層脫層", "covered": true, "description": "防水或防護塗層分離或剝落。" },
+        { "title": "正常磨損", "covered": false, "description": "因長期正常使用所致的逐漸老化。" },
+        { "title": "意外損壞", "covered": false, "description": "摔落、割傷、燒傷或其他意外造成的損壞。" },
+        { "title": "未經授權的改裝", "covered": false, "description": "非 EVASION 進行的改動或維修所致的損壞。" }
+      ]
+    },
+    "cookies": {
+      "metadata": { "title": "Cookie 政策 | EVASION", "description": "EVASION 如何使用必要、分析、功能與行銷 Cookie。" },
+      "hero": { "eyebrow": "法律", "title": "Cookie 政策", "description": "我們使用 Cookie 來維持網站運作並了解您的使用方式。以下清楚說明我們使用什麼以及原因。" },
+      "alwaysOn": "始終啟用",
+      "optional": "選用",
+      "examples": "範例",
+      "types": [
+        { "name": "嚴格必要", "required": true, "description": "這些 Cookie 對網站運作必不可少，支援購物車保存、安全結帳與帳戶認證等核心功能，無法關閉。", "examples": ["連線 ID", "購物車權杖", "CSRF 權杖", "認證權杖"] },
+        { "name": "分析", "required": false, "description": "這些 Cookie 協助我們了解訪客如何使用網站，例如最常瀏覽的頁面、停留時間與來源。所有資料皆為彙整且匿名。", "examples": ["Vercel Analytics", "頁面瀏覽事件", "來源管道"] },
+        { "name": "功能", "required": false, "description": "這些 Cookie 會記住您的偏好與設定，例如貨幣或語言，以提供更個人化的體驗。", "examples": ["貨幣偏好", "語言設定", "主題偏好"] },
+        { "name": "行銷", "required": false, "description": "這些 Cookie 可能由廣告夥伴設定，用於建立興趣輪廓並在其他網站顯示相關廣告。我們目前未進行任何第三方廣告活動。", "examples": ["目前未使用"] }
+      ],
+      "sections": [
+        { "title": "什麼是 Cookie？", "body": "Cookie 是您造訪網站時放置於裝置上的小型文字檔案。它們讓網站在後續造訪中辨識您的裝置，並儲存某些偏好或工作階段資訊。Cookie 被廣泛用於讓網站正常運作、提升效率，並向擁有者提供資訊。" },
+        { "title": "如何管理 Cookie", "body": "您可以透過多種方式控制與管理 Cookie：\n\n— 瀏覽器設定：多數瀏覽器允許檢視、刪除與封鎖 Cookie。請參考瀏覽器說明。封鎖全部 Cookie 可能影響網站功能。\n— Cookie 橫幅：首次造訪時，您會看到同意橫幅以選擇接受哪些非必要 Cookie。\n— 退出工具：對於分析，您可透過服務提供者直接退出，例如在瀏覽器中啟用 Do Not Track。" },
+        { "title": "第三方 Cookie", "body": "部分 Cookie 由出現在我們頁面上的第三方服務放置（例如金流的 Stripe、網站分析的 Vercel Analytics）。這些第三方有各自的隱私與 Cookie 政策，建議您參閱。" },
+        { "title": "本政策變更", "body": "我們可能不定期更新本 Cookie 政策，以反映技術、法規或實務變化。重大變更將透過網站通知。" }
+      ]
+    },
+    "privacy": {
+      "metadata": { "title": "隱私政策 | EVASION", "description": "EVASION 如何蒐集、使用、共享與保護個人資料。" },
+      "hero": { "eyebrow": "法律", "title": "隱私政策", "description": "我們認真看待您的隱私。本政策說明我們蒐集哪些資料、為何蒐集以及您如何控管。" },
+      "sections": [
+        { "title": "1. 我們是誰", "body": "EVASION AB（「EVASION」、「我們」）為瑞典登記公司（組織編號 559312-4801），登記地址為 Birger Jarlsgatan 57, 113 56 Stockholm。我們經營 evasion.com 及所有相關子網域（「網站」）。\n\n如對本政策有疑問，請來信 privacy@evasion.com。" },
+        { "title": "2. 蒐集的資料", "body": "我們蒐集您直接提供的資訊，包括：\n\n— 身分資料：姓名、電子郵件、帳單與配送地址、電話。\n— 付款資料：透過金流服務商 Stripe 處理的卡號、有效期與 CVV。我們不會在伺服器儲存完整卡片資料。\n— 訂單資料：購買產品、訂單紀錄、退貨與保固申請。\n— 帳戶資料：使用者名稱、雜湊處理的密碼、偏好設定。\n— 使用資料：IP 位址、瀏覽器、造訪頁面、停留時間、來源管道——透過 Cookie 與分析工具自動蒐集。\n— 通訊：您寄給我們的郵件或訊息內容。" },
+        { "title": "3. 如何使用資料", "body": "我們將您的資料用於：\n\n— 處理與履行訂單，包括配送與付款。\n— 管理您的帳戶並驗證身分。\n— 寄送交易郵件（訂單確認、配送更新、保固通知）。\n— 回覆諮詢與支援請求。\n— 在您同意時寄送行銷通訊。\n— 分析網站使用並改進產品與服務。\n— 履行法律義務（稅務紀錄、消費者保護法律）。" },
+        { "title": "4. 處理的法律依據", "body": "依 GDPR，我們依據下列基礎：\n\n— 契約：為履行訂單所必要的處理。\n— 合法利益：詐欺防範、網站安全與內部分析。\n— 同意：行銷郵件與非必要 Cookie。您可隨時撤回。\n— 法定義務：依瑞典法律保留稅務與會計紀錄。" },
+        { "title": "5. 資料共享", "body": "我們不出售您的個人資料。共享對象僅限：\n\n— 金流服務商 Stripe。\n— 物流業者 DHL、PostNord、UPS。\n— 雲端基礎設施 Vercel、AWS。\n— 分析服務 Vercel Analytics，皆受嚴格資料處理協議規範。\n— 法律要求時的主管機關。\n\n所有第三方僅得依我們的指示與適用個資法律處理您的資料。" },
+        { "title": "6. 國際傳輸", "body": "部分服務商位於 EEA 以外。當資料傳輸至 EEA 以外時，我們會確保採取適當保障措施，通常為歐盟執委會核可的標準契約條款。" },
+        { "title": "7. 保留期間", "body": "我們在為達成本政策所述目的所必要的期間內保留您的資料。訂單紀錄依瑞典會計法律保留 7 年。您可隨時要求刪除帳戶資料，惟仍受法律保留義務拘束。" },
+        { "title": "8. 您的權利", "body": "依 GDPR，您享有：\n\n— 存取我們持有之個人資料。\n— 更正不正確資料。\n— 要求刪除（「被遺忘權」），受法律例外限制。\n— 限制或反對處理。\n— 資料可攜權：以結構化、機器可讀格式取得資料。\n— 隨時撤回同意（當處理基於同意時）。\n— 向瑞典隱私保護局（IMY，imy.se）提出申訴。\n\n如欲行使權利請寄信 privacy@evasion.com，我們將於 30 天內回覆。" },
+        { "title": "9. Cookie", "body": "我們使用 Cookie 與類似技術。完整內容請見 Cookie 政策。您可透過橫幅或瀏覽器設定管理偏好。" },
+        { "title": "10. 兒童", "body": "本網站不以 16 歲以下兒童為對象。我們不會明知蒐集兒童個資。如您認為兒童向我們提供資料，請寄信 privacy@evasion.com，我們會立即刪除。" },
+        { "title": "11. 政策變更", "body": "我們可能不定期更新本政策。重大變更會以郵件或網站顯著通知方式告知。本頁底部日期顯示最後更新時間。" }
+      ]
+    },
+    "terms": {
+      "metadata": { "title": "使用條款 | EVASION", "description": "適用於 EVASION 網站使用與產品購買的條款。" },
+      "hero": { "eyebrow": "法律", "title": "使用條款", "description": "請於使用 EVASION 網站或購買產品前仔細閱讀本條款。" },
+      "sections": [
+        { "title": "1. 條款之接受", "body": "造訪或使用 EVASION 網站（evasion.com），或購買任何 EVASION 產品，即表示您同意受本使用條款（「條款」）拘束。如您不同意，請勿使用本網站或服務。\n\n本條款適用於所有訪客、客戶與使用者。EVASION AB 保留隨時更新本條款的權利。變更後繼續使用即代表您接受修訂後條款。" },
+        { "title": "2. 使用資格", "body": "您須年滿 18 歲方能在本網站下單。使用本網站即表示您聲明已達締結具拘束力契約的法定年齡。" },
+        { "title": "3. 產品與價格", "body": "所有產品說明、圖片與規格皆基於善意提供，可能不另行通知變更。我們保留更正錯誤並拒絕或取消以錯誤價格下單之權利。\n\n價格以歐元計價，並含適用於歐盟客戶的 VAT。價格不含運費或進口稅，將於結帳時計算。" },
+        { "title": "4. 訂單與付款", "body": "下單即為購買要約。僅在我們寄出訂單確認郵件後，契約方才成立。\n\n所有付款均透過 Stripe 安全處理。對於無法驗證付款或疑似詐欺者，我們保留取消權利。" },
+        { "title": "5. 配送", "body": "配送時間為估計，並不保證。EVASION 不就海關、物流業者或超出我們控制範圍之原因所致延誤負責。風險於交付時移轉。詳見配送政策。" },
+        { "title": "6. 退貨與退款", "body": "您有權於收貨後 60 天內退回未使用產品。退款與爭議程序見退款與爭議政策。法定消費者權利不受本條款影響。" },
+        { "title": "7. 智慧財產權", "body": "本網站所有內容（文字、圖片、商標、產品設計、程式碼）均為 EVASION AB 或其授權人之財產，受著作權、商標及其他智慧財產法律保護。\n\n未經本公司事先書面同意，您不得重製、散布、修改或創作衍生作品。" },
+        { "title": "8. 使用者行為", "body": "使用本網站時，您同意不：\n\n— 張貼或傳輸不法、有害或冒犯性內容。\n— 試圖未經授權存取本網站或其底層系統。\n— 將本網站用於 EVASION 未明確授權之商業用途。\n— 以自動化手段抓取、收集或擷取網站資料。\n— 侵害 EVASION 或任何第三方智慧財產權。" },
+        { "title": "9. 保證之免責", "body": "本網站及其內容以「現狀」提供，不附任何明示或默示保證。EVASION 不保證本網站不會中斷、無錯誤或無病毒。\n\n本條款任何內容均不限制或排除法律不得限制之責任，包括因疏忽致死亡或人身傷害之責任。" },
+        { "title": "10. 責任限制", "body": "於法律允許之最大範圍內，EVASION 因本條款或您使用本網站所負之總責任，不超過您就相關訂單支付之金額或 €100，以較高者為準。\n\n我們不就間接、附帶、特別或衍生性損害負責。" },
+        { "title": "11. 準據法", "body": "本條款受瑞典法律規範。任何爭議由瑞典斯德哥爾摩法院專屬管轄，但不影響您依居住地法律享有之強制性消費者保護權利。" },
+        { "title": "12. 聯絡方式", "body": "對本條款有疑問請寄信 legal@evasion.com，或郵寄至 EVASION AB, Birger Jarlsgatan 57, 113 56 Stockholm, Sweden。" }
+      ]
+    },
+    "refund": {
+      "metadata": { "title": "退款與爭議政策 | EVASION", "description": "EVASION 的退款資格、退貨流程、換貨、爭議與法定權利。" },
+      "hero": { "eyebrow": "法律", "title": "退款與爭議政策", "description": "我們為售出的每件產品負責。如果有任何問題，我們會妥善處理。" },
+      "quickLinks": ["如何退貨 ->", "保固申請 ->", "聯絡我們 ->"],
+      "sections": [
+        { "title": "1. 概述", "body": "本退款與爭議政策（「政策」）適用於在 evasion.com 上的所有購買，並適用於全球客戶。本政策與您的法定消費者權利並行，不予限縮。\n\n逐步退貨指引請見退貨頁面，保固申請請見保固頁面。" },
+        { "title": "2. 退款資格", "body": "您在以下情況可獲全額退款：\n\n— 收貨後 60 天內退回未使用且保持原狀之商品。\n— 商品到貨即破損或與描述有重大差異。\n— 商品出現我們保固範圍內之製造瑕疵。\n— 我們無法履行訂單且無合適替代品。\n\n以下情況不符合現金退款：\n— 有使用、磨損或改裝痕跡之商品。\n— 客製或刻字產品（瑕疵除外）。\n— 自第三方零售商購入之商品（請直接聯絡該零售商）。\n— 已兌換之電子禮券。" },
+        { "title": "3. 退款流程", "body": "申請退款：\n\n1. 寄信 returns@evasion.com，註明訂單號與退貨原因。\n2. 我們會在 1 個工作天內提供 RMA。\n3. 以可追蹤之物流寄回商品。瑕疵商品由 EVASION 負擔退貨運費，其他情況由客戶負擔。\n4. 收到並檢查後，我們會在 3–5 個工作天內處理退款。\n\n退款退回原支付方式。視銀行作業，可能再需 5–10 個工作天反映於對帳單。" },
+        { "title": "4. 部分退款", "body": "下列情形可能發放部分退款：\n\n— 只退回訂單之一部分。\n— 商品退回時狀態降低其價值（如缺少配件或原包裝）。\n— 原訂單套用折扣或促銷碼。\n\n處理前我們會告知部分退款金額。" },
+        { "title": "5. 換貨", "body": "我們不直接處理換貨。如欲改為其他產品，請退回原商品取得退款後重新下單。如此可最快完成處理並避免庫存問題。" },
+        { "title": "6. 爭議", "body": "我們力求快速、公平地解決所有問題。如您對退款或退貨結果不滿意：\n\n— 請寄信 disputes@evasion.com，附上訂單號、問題說明與相關證據（照片、信件）。\n— 我們會在 2 個工作天內回覆，並力求 10 個工作天內解決。\n— 若直接協商未果，您可向所在國家消費者保護機關或歐盟線上爭議解決平台 ec.europa.eu/consumers/odr 申訴。\n\n付款爭議亦可向發卡行申請拒付。建議您先與我們聯絡，通常我們可比拒付流程更快解決。" },
+        { "title": "7. 法定權利", "body": "本政策不影響適用消費者保護法律所賦予的法定權利。EU／EEA 客戶享有歐盟指令 2019/771 規定至少 2 年的法定保證。英國客戶享有 Consumer Rights Act 2015 等同權利。\n\n如有不確定，請聯絡所在國家的消費者主管機關。" },
+        { "title": "8. 聯絡方式", "body": "退款申請：returns@evasion.com\n爭議：disputes@evasion.com\n一般支援：support@evasion.com" }
+      ]
+    }
+  }
+}
