@@ -1,6 +1,5 @@
 import React from "react";
 import type { Metadata, Viewport } from "next";
-import { Inter } from "next/font/google";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -10,8 +9,6 @@ import { CookieConsent } from "@/components/cookie-consent";
 import { ThemeProvider } from "@/components/theme-provider";
 import { routing, type Locale } from "@/i18n/routing";
 import "../globals.css";
-
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 const icons: Metadata["icons"] = {
   icon: [
@@ -75,7 +72,7 @@ export default async function RootLayout({ children, params }: Props) {
 
   return (
     <html lang={locale} suppressHydrationWarning>
-      <body className={`${inter.variable} font-sans antialiased`}>
+      <body className="font-sans antialiased">
         <NextIntlClientProvider>
           <ThemeProvider
             attribute="class"

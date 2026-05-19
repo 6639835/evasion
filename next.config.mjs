@@ -14,7 +14,7 @@ const securityHeaders = [
   },
   {
     // Conservative CSP suitable for a static marketing site that uses
-    // Vercel Analytics, next/image with Unsplash, and Google Fonts via next/font.
+    // Vercel Analytics and next/image with Unsplash.
     key: "Content-Security-Policy",
     value: [
       "default-src 'self'",
