@@ -1,11 +1,12 @@
 import React from "react";
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
-import { Analytics } from "@vercel/analytics/next";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 
+import { ConsentAnalytics } from "@/components/consent-analytics";
+import { CookieConsent } from "@/components/cookie-consent";
 import { ThemeProvider } from "@/components/theme-provider";
 import { routing, type Locale } from "@/i18n/routing";
 import "../globals.css";
@@ -83,7 +84,8 @@ export default async function RootLayout({ children, params }: Props) {
             disableTransitionOnChange
           >
             {children}
-            <Analytics />
+            <CookieConsent />
+            <ConsentAnalytics />
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>

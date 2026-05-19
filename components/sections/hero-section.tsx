@@ -4,6 +4,8 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { useEffect, useRef, useState } from "react";
 
+import { usePrefersReducedMotion } from "@/hooks/use-prefers-reduced-motion";
+
 const word = "EVASION";
 
 const sideImages = [
@@ -37,6 +39,7 @@ export function HeroSection() {
   const sectionRef = useRef<HTMLElement>(null);
   const [scrollProgress, setScrollProgress] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
+  const prefersReducedMotion = usePrefersReducedMotion();
   const t = useTranslations("Home.hero");
 
   useEffect(() => {
@@ -47,24 +50,29 @@ export function HeroSection() {
   }, []);
 
   useEffect(() => {
+    if (prefersReducedMotion) {
+      setScrollProgress(0);
+      return;
+    }
+
     const handleScroll = () => {
       if (!sectionRef.current) return;
-      
+
       const rect = sectionRef.current.getBoundingClientRect();
       const scrollableHeight = window.innerHeight * 2;
       const scrolled = -rect.top;
       const progress = Math.max(0, Math.min(1, scrolled / scrollableHeight));
-      
+
       setScrollProgress(progress);
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
     handleScroll();
-    
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [prefersReducedMotion]);
 
   // Text fades out first (0 to 0.2)
   const textOpacity = Math.max(0, 1 - (scrollProgress / 0.2));
@@ -157,12 +165,21 @@ export function HeroSection() {
                   {word.split("").map((letter, index) => (
                     <span
                       key={index}
-                      className="inline-block animate-[slideUp_0.8s_ease-out_forwards] opacity-0"
-                      style={{
-                        animationDelay: `${index * 0.08}s`,
-                        transition: 'all 1.5s',
-                        transitionTimingFunction: 'cubic-bezier(0.86, 0, 0.07, 1)',
-                      }}
+                      className={
+                        prefersReducedMotion
+                          ? "inline-block opacity-100"
+                          : "inline-block animate-[slideUp_0.8s_ease-out_forwards] opacity-0"
+                      }
+                      style={
+                        prefersReducedMotion
+                          ? undefined
+                          : {
+                              animationDelay: `${index * 0.08}s`,
+                              transition: "all 1.5s",
+                              transitionTimingFunction:
+                                "cubic-bezier(0.86, 0, 0.07, 1)",
+                            }
+                      }
                     >
                       {letter}
                     </span>
@@ -202,8 +219,8 @@ export function HeroSection() {
         </div>
       </div>
 
-      {/* Scroll space to enable animation */}
-      <div className="h-[200vh]" />
+      {/* Scroll space to enable animation (skipped when reduced motion is requested) */}
+      {!prefersReducedMotion && <div className="h-[200vh]" />}
 
       {/* Tagline Section */}
       <div className="px-5 py-16 sm:px-8 sm:py-24 md:px-12 md:py-32 lg:px-20 lg:py-40">

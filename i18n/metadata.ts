@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 
+import { siteUrl } from "@/lib/site";
 import { type Locale, routing } from "./routing";
 
-const baseUrl = new URL("https://evasion.com");
+const baseUrl = new URL(siteUrl);
 
 function localizedPath(path: string, locale: Locale) {
   const normalizedPath = path === "/" ? "" : path;

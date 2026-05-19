@@ -210,6 +210,35 @@
       "reviewsEyebrow": "From the field"
     }
   },
+  "Errors": {
+    "notFound": {
+      "metadata": {
+        "title": "Page not found | EVASION",
+        "description": "The page you were looking for could not be found."
+      },
+      "eyebrow": "404",
+      "title": "Off the trail.",
+      "description": "The page you were looking for has wandered off. Let’s get you back to base camp.",
+      "cta": "Return home"
+    },
+    "appError": {
+      "metadata": {
+        "title": "Something went wrong | EVASION"
+      },
+      "eyebrow": "Error",
+      "title": "Something broke on our side.",
+      "description": "An unexpected error occurred. You can try again, or head back to the homepage.",
+      "retry": "Try again",
+      "home": "Go home"
+    }
+  },
+  "Cookies": {
+    "title": "We use cookies",
+    "description": "EVASION uses essential cookies to run this site and optional analytics cookies to improve it. Read our cookie policy.",
+    "policy": "Cookie policy",
+    "accept": "Accept all",
+    "reject": "Reject non-essential"
+  },
   "Pages": {
     "lastUpdated": "Last updated: 14 May 2026",
     "about": {

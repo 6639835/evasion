@@ -4,11 +4,18 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { useEffect, useRef, useState } from "react";
 
+import { usePrefersReducedMotion } from "@/hooks/use-prefers-reduced-motion";
+
 function ScrollRevealText({ text }: { text: string }) {
   const containerRef = useRef<HTMLParagraphElement>(null);
   const [progress, setProgress] = useState(0);
+  const prefersReducedMotion = usePrefersReducedMotion();
 
   useEffect(() => {
+    if (prefersReducedMotion) {
+      setProgress(1);
+      return;
+    }
     const handleScroll = () => {
       if (!containerRef.current) return;
       
@@ -27,9 +34,9 @@ function ScrollRevealText({ text }: { text: string }) {
 
     window.addEventListener("scroll", handleScroll, { passive: true });
     handleScroll();
-    
+
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [prefersReducedMotion]);
 
   const words = text.split(" ");
   
@@ -91,6 +98,7 @@ export function TechnologySection() {
   const textSectionRef = useRef<HTMLDivElement>(null);
   const [scrollProgress, setScrollProgress] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
+  const prefersReducedMotion = usePrefersReducedMotion();
   
   const descriptionText = t("description");
   const titleWords = t.raw("titleWords") as string[];
@@ -103,24 +111,28 @@ export function TechnologySection() {
   }, []);
 
   useEffect(() => {
+    if (prefersReducedMotion) {
+      setScrollProgress(0);
+      return;
+    }
     const handleScroll = () => {
       if (!sectionRef.current) return;
-      
+
       const rect = sectionRef.current.getBoundingClientRect();
       const scrollableHeight = window.innerHeight * 2;
       const scrolled = -rect.top;
       const progress = Math.max(0, Math.min(1, scrolled / scrollableHeight));
-      
+
       setScrollProgress(progress);
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
     handleScroll();
-    
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [prefersReducedMotion]);
 
   const titleOpacity = Math.max(0, 1 - (scrollProgress / 0.2));
   const imageProgress = Math.max(0, Math.min(1, (scrollProgress - 0.2) / 0.8));
@@ -250,8 +262,8 @@ export function TechnologySection() {
         </div>
       </div>
 
-      {/* Scroll space to enable animation */}
-      <div className="h-[200vh]" />
+      {/* Scroll space to enable animation (skipped when reduced motion is requested) */}
+      {!prefersReducedMotion && <div className="h-[200vh]" />}
 
       {/* Description Section with Scroll Reveal */}
       <div 
